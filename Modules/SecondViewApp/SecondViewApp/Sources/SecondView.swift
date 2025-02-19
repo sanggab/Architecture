@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
-//  FirstViewApp
+//  SecondView.swift
+//  SecondViewApp
 //
 //  Created by Gab on 2/18/25.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct SecondView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SecondView()
 }
