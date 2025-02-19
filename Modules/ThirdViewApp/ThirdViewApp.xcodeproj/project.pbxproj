@@ -7,57 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFD0FD872D656445004E7201 /* FirstViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */; };
-		EFD0FD922D656445004E7201 /* FirstViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */; };
-		EFD0FD932D656445004E7201 /* FirstViewInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFD0FDF02D65B2B0004E7201 /* ThirdViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */; };
+		EFD0FDF12D65B2B0004E7201 /* ThirdViewInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EFBD1F8B2D641086003426F4 /* PBXContainerItemProxy */ = {
+		EFBD14772D6446340090B457 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
+			containerPortal = EFBD145E2D6446320090B457 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EFBD1F792D641083003426F4;
-			remoteInfo = Architecture;
+			remoteGlobalIDString = EFBD14652D6446320090B457;
+			remoteInfo = ThirdViewApp;
 		};
-		EFBD1F952D641086003426F4 /* PBXContainerItemProxy */ = {
+		EFBD14812D6446340090B457 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
+			containerPortal = EFBD145E2D6446320090B457 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EFBD1F792D641083003426F4;
-			remoteInfo = Architecture;
+			remoteGlobalIDString = EFBD14652D6446320090B457;
+			remoteInfo = ThirdViewApp;
 		};
-		EFD0FD882D656445004E7201 /* PBXContainerItemProxy */ = {
+		EFD0FDEE2D65B2B0004E7201 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
+			containerPortal = EFBD145E2D6446320090B457 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EFD0FD7C2D656445004E7201;
-			remoteInfo = FirstViewInterface;
-		};
-		EFD0FD8A2D656445004E7201 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFBD1F792D641083003426F4;
-			remoteInfo = Architecture;
-		};
-		EFD0FD902D656445004E7201 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFD0FD7C2D656445004E7201;
-			remoteInfo = FirstViewInterface;
+			remoteGlobalIDString = EFD0FDE72D65B2B0004E7201;
+			remoteInfo = ThirdViewInterface;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EFD0FD982D656445004E7201 /* Embed Frameworks */ = {
+		EFD0FDF22D65B2B0004E7201 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EFD0FD932D656445004E7201 /* FirstViewInterface.framework in Embed Frameworks */,
+				EFD0FDF12D65B2B0004E7201 /* ThirdViewInterface.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,143 +50,121 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EFBD140F2D643EEA0090B457 /* FirstViewApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FirstViewApp.xcodeproj; path = FirstViewApp/FirstViewApp.xcodeproj; sourceTree = "<group>"; };
-		EFBD14512D643F000090B457 /* SecondViewApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecondViewApp.xcodeproj; path = SecondViewApp/SecondViewApp.xcodeproj; sourceTree = "<group>"; };
-		EFBD14932D6446340090B457 /* ThirdViewApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThirdViewApp.xcodeproj; path = ThirdViewApp/ThirdViewApp.xcodeproj; sourceTree = "<group>"; };
-		EFBD1F7A2D641083003426F4 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstViewInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD0FD862D656445004E7201 /* FirstViewInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstViewInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD0FE6E2D65B33E004E7201 /* Features.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Features.xcodeproj; path = Features/Features.xcodeproj; sourceTree = "<group>"; };
+		EFBD14662D6446320090B457 /* ThirdViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBD14762D6446340090B457 /* ThirdViewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdViewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBD14802D6446340090B457 /* ThirdViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdViewInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EFD0FE002D65B2C4004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ThirdViewAppTests/ThirdViewAppTests.swift,
+				Tests/ThirdViewAppUITests/ThirdViewAppUITests.swift,
+				Tests/ThirdViewAppUITests/ThirdViewAppUITestsLaunchTests.swift,
+				ThirdViewInterface/ThirdViewInterface.docc,
+			);
+			target = EFBD14652D6446320090B457 /* ThirdViewApp */;
+		};
+		EFD0FE012D65B2C4004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewAppTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ThirdViewAppTests/ThirdViewAppTests.swift,
+			);
+			target = EFBD14752D6446340090B457 /* ThirdViewAppTests */;
+		};
+		EFD0FE022D65B2C4004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ThirdViewAppUITests/ThirdViewAppUITests.swift,
+				Tests/ThirdViewAppUITests/ThirdViewAppUITestsLaunchTests.swift,
+			);
+			target = EFBD147F2D6446340090B457 /* ThirdViewAppUITests */;
+		};
+		EFD0FE082D65B2C7004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewInterface" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ThirdViewInterface/ThirdViewInterface.docc,
+				ThirdViewInterface/ThirdViewInterface.h,
+			);
+			publicHeaders = (
+				ThirdViewInterface/ThirdViewInterface.h,
+			);
+			target = EFD0FDE72D65B2B0004E7201 /* ThirdViewInterface */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EFBD1F7C2D641083003426F4 /* Architecture */ = {
+		EFBD14682D6446320090B457 /* ThirdViewApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		EFBD1F8D2D641086003426F4 /* ArchitectureTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ArchitectureTests;
-			sourceTree = "<group>";
-		};
-		EFBD1F972D641086003426F4 /* ArchitectureUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ArchitectureUITests;
+			exceptions = (
+				EFD0FE002D65B2C4004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewApp" target */,
+				EFD0FE012D65B2C4004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewAppTests" target */,
+				EFD0FE022D65B2C4004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewAppUITests" target */,
+				EFD0FE082D65B2C7004E7201 /* Exceptions for "ThirdViewApp" folder in "ThirdViewInterface" target */,
+			);
+			path = ThirdViewApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EFBD1F772D641083003426F4 /* Frameworks */ = {
+		EFBD14632D6446320090B457 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0FD922D656445004E7201 /* FirstViewInterface.framework in Frameworks */,
+				EFD0FDF02D65B2B0004E7201 /* ThirdViewInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFBD1F872D641086003426F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFBD1F912D641086003426F4 /* Frameworks */ = {
+		EFBD14732D6446340090B457 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFD0FD7A2D656445004E7201 /* Frameworks */ = {
+		EFBD147D2D6446340090B457 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFD0FD832D656445004E7201 /* Frameworks */ = {
+		EFD0FDE52D65B2B0004E7201 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0FD872D656445004E7201 /* FirstViewInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EFBD13D82D643ED90090B457 /* Modules */ = {
+		EFBD145D2D6446320090B457 = {
 			isa = PBXGroup;
 			children = (
-				EFBD140F2D643EEA0090B457 /* FirstViewApp.xcodeproj */,
-				EFBD14512D643F000090B457 /* SecondViewApp.xcodeproj */,
-				EFBD14932D6446340090B457 /* ThirdViewApp.xcodeproj */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		EFBD1F712D641083003426F4 = {
-			isa = PBXGroup;
-			children = (
-				EFBD1F7C2D641083003426F4 /* Architecture */,
-				EFBD1F8D2D641086003426F4 /* ArchitectureTests */,
-				EFBD1F972D641086003426F4 /* ArchitectureUITests */,
-				EFD0FE372D65B315004E7201 /* Feature */,
-				EFBD13D82D643ED90090B457 /* Modules */,
-				EFBD1F7B2D641083003426F4 /* Products */,
+				EFBD14682D6446320090B457 /* ThirdViewApp */,
+				EFBD14672D6446320090B457 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EFBD1F7B2D641083003426F4 /* Products */ = {
+		EFBD14672D6446320090B457 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFBD1F7A2D641083003426F4 /* Architecture.app */,
-				EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */,
-				EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */,
-				EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */,
-				EFD0FD862D656445004E7201 /* FirstViewInterfaceTests.xctest */,
+				EFBD14662D6446320090B457 /* ThirdViewApp.app */,
+				EFBD14762D6446340090B457 /* ThirdViewAppTests.xctest */,
+				EFBD14802D6446340090B457 /* ThirdViewAppUITests.xctest */,
+				EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EFD0FCBE2D64673D004E7201 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFD0FCC02D64673D004E7201 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFD0FCE72D64673E004E7201 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFD0FE372D65B315004E7201 /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				EFD0FE6E2D65B33E004E7201 /* Features.xcodeproj */,
-			);
-			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EFD0FD782D656445004E7201 /* Headers */ = {
+		EFD0FDE32D65B2B0004E7201 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,214 +174,161 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EFBD1F792D641083003426F4 /* Architecture */ = {
+		EFBD14652D6446320090B457 /* ThirdViewApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFBD1F9E2D641086003426F4 /* Build configuration list for PBXNativeTarget "Architecture" */;
+			buildConfigurationList = EFBD148A2D6446340090B457 /* Build configuration list for PBXNativeTarget "ThirdViewApp" */;
 			buildPhases = (
-				EFBD1F762D641083003426F4 /* Sources */,
-				EFBD1F772D641083003426F4 /* Frameworks */,
-				EFBD1F782D641083003426F4 /* Resources */,
-				EFD0FD982D656445004E7201 /* Embed Frameworks */,
+				EFBD14622D6446320090B457 /* Sources */,
+				EFBD14632D6446320090B457 /* Frameworks */,
+				EFBD14642D6446320090B457 /* Resources */,
+				EFD0FDF22D65B2B0004E7201 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EFD0FD912D656445004E7201 /* PBXTargetDependency */,
+				EFD0FDEF2D65B2B0004E7201 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				EFBD1F7C2D641083003426F4 /* Architecture */,
+				EFBD14682D6446320090B457 /* ThirdViewApp */,
 			);
-			name = Architecture;
+			name = ThirdViewApp;
 			packageProductDependencies = (
 			);
-			productName = Architecture;
-			productReference = EFBD1F7A2D641083003426F4 /* Architecture.app */;
+			productName = ThirdViewApp;
+			productReference = EFBD14662D6446320090B457 /* ThirdViewApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EFBD1F892D641086003426F4 /* ArchitectureTests */ = {
+		EFBD14752D6446340090B457 /* ThirdViewAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFBD1FA12D641086003426F4 /* Build configuration list for PBXNativeTarget "ArchitectureTests" */;
+			buildConfigurationList = EFBD148D2D6446340090B457 /* Build configuration list for PBXNativeTarget "ThirdViewAppTests" */;
 			buildPhases = (
-				EFBD1F862D641086003426F4 /* Sources */,
-				EFBD1F872D641086003426F4 /* Frameworks */,
-				EFBD1F882D641086003426F4 /* Resources */,
+				EFBD14722D6446340090B457 /* Sources */,
+				EFBD14732D6446340090B457 /* Frameworks */,
+				EFBD14742D6446340090B457 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EFBD1F8C2D641086003426F4 /* PBXTargetDependency */,
+				EFBD14782D6446340090B457 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				EFBD1F8D2D641086003426F4 /* ArchitectureTests */,
-			);
-			name = ArchitectureTests;
+			name = ThirdViewAppTests;
 			packageProductDependencies = (
 			);
-			productName = ArchitectureTests;
-			productReference = EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */;
+			productName = ThirdViewAppTests;
+			productReference = EFBD14762D6446340090B457 /* ThirdViewAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EFBD1F932D641086003426F4 /* ArchitectureUITests */ = {
+		EFBD147F2D6446340090B457 /* ThirdViewAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFBD1FA42D641086003426F4 /* Build configuration list for PBXNativeTarget "ArchitectureUITests" */;
+			buildConfigurationList = EFBD14902D6446340090B457 /* Build configuration list for PBXNativeTarget "ThirdViewAppUITests" */;
 			buildPhases = (
-				EFBD1F902D641086003426F4 /* Sources */,
-				EFBD1F912D641086003426F4 /* Frameworks */,
-				EFBD1F922D641086003426F4 /* Resources */,
+				EFBD147C2D6446340090B457 /* Sources */,
+				EFBD147D2D6446340090B457 /* Frameworks */,
+				EFBD147E2D6446340090B457 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EFBD1F962D641086003426F4 /* PBXTargetDependency */,
+				EFBD14822D6446340090B457 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				EFBD1F972D641086003426F4 /* ArchitectureUITests */,
-			);
-			name = ArchitectureUITests;
+			name = ThirdViewAppUITests;
 			packageProductDependencies = (
 			);
-			productName = ArchitectureUITests;
-			productReference = EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */;
+			productName = ThirdViewAppUITests;
+			productReference = EFBD14802D6446340090B457 /* ThirdViewAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		EFD0FD7C2D656445004E7201 /* FirstViewInterface */ = {
+		EFD0FDE72D65B2B0004E7201 /* ThirdViewInterface */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFD0FD952D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterface" */;
+			buildConfigurationList = EFD0FDF62D65B2B0004E7201 /* Build configuration list for PBXNativeTarget "ThirdViewInterface" */;
 			buildPhases = (
-				EFD0FD782D656445004E7201 /* Headers */,
-				EFD0FD792D656445004E7201 /* Sources */,
-				EFD0FD7A2D656445004E7201 /* Frameworks */,
-				EFD0FD7B2D656445004E7201 /* Resources */,
+				EFD0FDE32D65B2B0004E7201 /* Headers */,
+				EFD0FDE42D65B2B0004E7201 /* Sources */,
+				EFD0FDE52D65B2B0004E7201 /* Frameworks */,
+				EFD0FDE62D65B2B0004E7201 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FirstViewInterface;
+			name = ThirdViewInterface;
 			packageProductDependencies = (
 			);
-			productName = FirstViewInterface;
-			productReference = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */;
+			productName = ThirdViewInterface;
+			productReference = EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		EFD0FD852D656445004E7201 /* FirstViewInterfaceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EFD0FD992D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterfaceTests" */;
-			buildPhases = (
-				EFD0FD822D656445004E7201 /* Sources */,
-				EFD0FD832D656445004E7201 /* Frameworks */,
-				EFD0FD842D656445004E7201 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EFD0FD892D656445004E7201 /* PBXTargetDependency */,
-				EFD0FD8B2D656445004E7201 /* PBXTargetDependency */,
-			);
-			name = FirstViewInterfaceTests;
-			packageProductDependencies = (
-			);
-			productName = FirstViewInterfaceTests;
-			productReference = EFD0FD862D656445004E7201 /* FirstViewInterfaceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EFBD1F722D641083003426F4 /* Project object */ = {
+		EFBD145E2D6446320090B457 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					EFBD1F792D641083003426F4 = {
+					EFBD14652D6446320090B457 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					EFBD1F892D641086003426F4 = {
+					EFBD14752D6446340090B457 = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = EFBD1F792D641083003426F4;
+						TestTargetID = EFBD14652D6446320090B457;
 					};
-					EFBD1F932D641086003426F4 = {
+					EFBD147F2D6446340090B457 = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = EFBD1F792D641083003426F4;
+						TestTargetID = EFBD14652D6446320090B457;
 					};
-					EFD0FD7C2D656445004E7201 = {
+					EFD0FDE72D65B2B0004E7201 = {
 						CreatedOnToolsVersion = 16.0;
-					};
-					EFD0FD852D656445004E7201 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = EFBD1F792D641083003426F4;
 					};
 				};
 			};
-			buildConfigurationList = EFBD1F752D641083003426F4 /* Build configuration list for PBXProject "Architecture" */;
+			buildConfigurationList = EFBD14612D6446320090B457 /* Build configuration list for PBXProject "ThirdViewApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = EFBD1F712D641083003426F4;
+			mainGroup = EFBD145D2D6446320090B457;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = EFBD1F7B2D641083003426F4 /* Products */;
+			productRefGroup = EFBD14672D6446320090B457 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EFD0FCBE2D64673D004E7201 /* Products */;
-					ProjectRef = EFBD140F2D643EEA0090B457 /* FirstViewApp.xcodeproj */;
-				},
-				{
-					ProductGroup = EFD0FCE72D64673E004E7201 /* Products */;
-					ProjectRef = EFBD14512D643F000090B457 /* SecondViewApp.xcodeproj */;
-				},
-				{
-					ProductGroup = EFD0FCC02D64673D004E7201 /* Products */;
-					ProjectRef = EFBD14932D6446340090B457 /* ThirdViewApp.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				EFBD1F792D641083003426F4 /* Architecture */,
-				EFBD1F892D641086003426F4 /* ArchitectureTests */,
-				EFBD1F932D641086003426F4 /* ArchitectureUITests */,
-				EFD0FD7C2D656445004E7201 /* FirstViewInterface */,
-				EFD0FD852D656445004E7201 /* FirstViewInterfaceTests */,
+				EFBD14652D6446320090B457 /* ThirdViewApp */,
+				EFBD14752D6446340090B457 /* ThirdViewAppTests */,
+				EFBD147F2D6446340090B457 /* ThirdViewAppUITests */,
+				EFD0FDE72D65B2B0004E7201 /* ThirdViewInterface */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EFBD1F782D641083003426F4 /* Resources */ = {
+		EFBD14642D6446320090B457 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFBD1F882D641086003426F4 /* Resources */ = {
+		EFBD14742D6446340090B457 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFBD1F922D641086003426F4 /* Resources */ = {
+		EFBD147E2D6446340090B457 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFD0FD7B2D656445004E7201 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFD0FD842D656445004E7201 /* Resources */ = {
+		EFD0FDE62D65B2B0004E7201 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,35 +338,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EFBD1F762D641083003426F4 /* Sources */ = {
+		EFBD14622D6446320090B457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFBD1F862D641086003426F4 /* Sources */ = {
+		EFBD14722D6446340090B457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFBD1F902D641086003426F4 /* Sources */ = {
+		EFBD147C2D6446340090B457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFD0FD792D656445004E7201 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFD0FD822D656445004E7201 /* Sources */ = {
+		EFD0FDE42D65B2B0004E7201 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -466,35 +369,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EFBD1F8C2D641086003426F4 /* PBXTargetDependency */ = {
+		EFBD14782D6446340090B457 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EFBD1F792D641083003426F4 /* Architecture */;
-			targetProxy = EFBD1F8B2D641086003426F4 /* PBXContainerItemProxy */;
+			target = EFBD14652D6446320090B457 /* ThirdViewApp */;
+			targetProxy = EFBD14772D6446340090B457 /* PBXContainerItemProxy */;
 		};
-		EFBD1F962D641086003426F4 /* PBXTargetDependency */ = {
+		EFBD14822D6446340090B457 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EFBD1F792D641083003426F4 /* Architecture */;
-			targetProxy = EFBD1F952D641086003426F4 /* PBXContainerItemProxy */;
+			target = EFBD14652D6446320090B457 /* ThirdViewApp */;
+			targetProxy = EFBD14812D6446340090B457 /* PBXContainerItemProxy */;
 		};
-		EFD0FD892D656445004E7201 /* PBXTargetDependency */ = {
+		EFD0FDEF2D65B2B0004E7201 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EFD0FD7C2D656445004E7201 /* FirstViewInterface */;
-			targetProxy = EFD0FD882D656445004E7201 /* PBXContainerItemProxy */;
-		};
-		EFD0FD8B2D656445004E7201 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFBD1F792D641083003426F4 /* Architecture */;
-			targetProxy = EFD0FD8A2D656445004E7201 /* PBXContainerItemProxy */;
-		};
-		EFD0FD912D656445004E7201 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFD0FD7C2D656445004E7201 /* FirstViewInterface */;
-			targetProxy = EFD0FD902D656445004E7201 /* PBXContainerItemProxy */;
+			target = EFD0FDE72D65B2B0004E7201 /* ThirdViewInterface */;
+			targetProxy = EFD0FDEE2D65B2B0004E7201 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		EFBD1F9C2D641086003426F4 /* Debug */ = {
+		EFBD14882D6446340090B457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -557,7 +450,7 @@
 			};
 			name = Debug;
 		};
-		EFBD1F9D2D641086003426F4 /* Release */ = {
+		EFBD14892D6446340090B457 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -613,14 +506,14 @@
 			};
 			name = Release;
 		};
-		EFBD1F9F2D641086003426F4 /* Debug */ = {
+		EFBD148B2D6446340090B457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Architecture/Utils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ThirdViewApp/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Z93APRK365;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -635,7 +528,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.Architecture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -643,14 +536,14 @@
 			};
 			name = Debug;
 		};
-		EFBD1FA02D641086003426F4 /* Release */ = {
+		EFBD148C2D6446340090B457 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Architecture/Utils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ThirdViewApp/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Z93APRK365;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -665,7 +558,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.Architecture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -673,7 +566,7 @@
 			};
 			name = Release;
 		};
-		EFBD1FA22D641086003426F4 /* Debug */ = {
+		EFBD148E2D6446340090B457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -683,16 +576,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ArchitectureTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Architecture";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdViewApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThirdViewApp";
 			};
 			name = Debug;
 		};
-		EFBD1FA32D641086003426F4 /* Release */ = {
+		EFBD148F2D6446340090B457 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -702,16 +595,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ArchitectureTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Architecture";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdViewApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThirdViewApp";
 			};
 			name = Release;
 		};
-		EFBD1FA52D641086003426F4 /* Debug */ = {
+		EFBD14912D6446340090B457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -720,16 +613,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ArchitectureUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Architecture;
+				TEST_TARGET_NAME = ThirdViewApp;
 			};
 			name = Debug;
 		};
-		EFBD1FA62D641086003426F4 /* Release */ = {
+		EFBD14922D6446340090B457 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -738,16 +631,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ArchitectureUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Architecture;
+				TEST_TARGET_NAME = ThirdViewApp;
 			};
 			name = Release;
 		};
-		EFD0FD962D656445004E7201 /* Debug */ = {
+		EFD0FDF32D65B2B0004E7201 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -771,7 +664,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewInterface;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -783,7 +676,7 @@
 			};
 			name = Debug;
 		};
-		EFD0FD972D656445004E7201 /* Release */ = {
+		EFD0FDF42D65B2B0004E7201 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -807,7 +700,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ThirdViewInterface;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -816,103 +709,58 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EFD0FD9A2D656445004E7201 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JA868URLCA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterfaceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Architecture";
-			};
-			name = Debug;
-		};
-		EFD0FD9B2D656445004E7201 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JA868URLCA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterfaceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Architecture";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EFBD1F752D641083003426F4 /* Build configuration list for PBXProject "Architecture" */ = {
+		EFBD14612D6446320090B457 /* Build configuration list for PBXProject "ThirdViewApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFBD1F9C2D641086003426F4 /* Debug */,
-				EFBD1F9D2D641086003426F4 /* Release */,
+				EFBD14882D6446340090B457 /* Debug */,
+				EFBD14892D6446340090B457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFBD1F9E2D641086003426F4 /* Build configuration list for PBXNativeTarget "Architecture" */ = {
+		EFBD148A2D6446340090B457 /* Build configuration list for PBXNativeTarget "ThirdViewApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFBD1F9F2D641086003426F4 /* Debug */,
-				EFBD1FA02D641086003426F4 /* Release */,
+				EFBD148B2D6446340090B457 /* Debug */,
+				EFBD148C2D6446340090B457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFBD1FA12D641086003426F4 /* Build configuration list for PBXNativeTarget "ArchitectureTests" */ = {
+		EFBD148D2D6446340090B457 /* Build configuration list for PBXNativeTarget "ThirdViewAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFBD1FA22D641086003426F4 /* Debug */,
-				EFBD1FA32D641086003426F4 /* Release */,
+				EFBD148E2D6446340090B457 /* Debug */,
+				EFBD148F2D6446340090B457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFBD1FA42D641086003426F4 /* Build configuration list for PBXNativeTarget "ArchitectureUITests" */ = {
+		EFBD14902D6446340090B457 /* Build configuration list for PBXNativeTarget "ThirdViewAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFBD1FA52D641086003426F4 /* Debug */,
-				EFBD1FA62D641086003426F4 /* Release */,
+				EFBD14912D6446340090B457 /* Debug */,
+				EFBD14922D6446340090B457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFD0FD952D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterface" */ = {
+		EFD0FDF62D65B2B0004E7201 /* Build configuration list for PBXNativeTarget "ThirdViewInterface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFD0FD962D656445004E7201 /* Debug */,
-				EFD0FD972D656445004E7201 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFD0FD992D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterfaceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EFD0FD9A2D656445004E7201 /* Debug */,
-				EFD0FD9B2D656445004E7201 /* Release */,
+				EFD0FDF32D65B2B0004E7201 /* Debug */,
+				EFD0FDF42D65B2B0004E7201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EFBD1F722D641083003426F4 /* Project object */;
+	rootObject = EFBD145E2D6446320090B457 /* Project object */;
 }
