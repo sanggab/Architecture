@@ -13,7 +13,7 @@
 		EFD0FEAE2D65B3DD004E7201 /* ThirdViewTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FEA52D65B3DD004E7201 /* ThirdViewTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD0FEDB2D65B450004E7201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD0FED42D65B450004E7201 /* Preview Assets.xcassets */; };
 		EFD0FEDC2D65B450004E7201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD0FED62D65B450004E7201 /* Assets.xcassets */; };
-		EFD0FEDD2D65B450004E7201 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FEC52D65B450004E7201 /* ContentView.swift */; };
+		EFD0FEDD2D65B450004E7201 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FEC52D65B450004E7201 /* ThirdView.swift */; };
 		EFD0FEE32D65B450004E7201 /* ThirdViewAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FED82D65B450004E7201 /* ThirdViewAppApp.swift */; };
 		EFD0FEE42D65B450004E7201 /* ThirdViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FEC82D65B450004E7201 /* ThirdViewAppTests.swift */; };
 		EFD0FEE52D65B450004E7201 /* ThirdViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FECA2D65B450004E7201 /* ThirdViewAppUITests.swift */; };
@@ -76,7 +76,7 @@
 		EFBD14802D6446340090B457 /* ThirdViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdViewInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FEA52D65B3DD004E7201 /* ThirdViewTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdViewTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD0FEC52D65B450004E7201 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFD0FEC52D65B450004E7201 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		EFD0FEC82D65B450004E7201 /* ThirdViewAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewAppTests.swift; sourceTree = "<group>"; };
 		EFD0FECA2D65B450004E7201 /* ThirdViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewAppUITests.swift; sourceTree = "<group>"; };
 		EFD0FECB2D65B450004E7201 /* ThirdViewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		EFD0FEC62D65B450004E7201 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EFD0FEC52D65B450004E7201 /* ContentView.swift */,
+				EFD0FEC52D65B450004E7201 /* ThirdView.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -469,7 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0FEDD2D65B450004E7201 /* ContentView.swift in Sources */,
+				EFD0FEDD2D65B450004E7201 /* ThirdView.swift in Sources */,
 				EFD0FEE32D65B450004E7201 /* ThirdViewAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
