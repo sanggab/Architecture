@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		EFC254E22D66AFCC005A18CD /* FirstViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC254DA2D66AFCC005A18CD /* FirstViewUI.framework */; };
 		EFC254E32D66AFCC005A18CD /* FirstViewUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC254DA2D66AFCC005A18CD /* FirstViewUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFC257462D670F5D005A18CD /* FirstViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC257452D670F5D005A18CD /* FirstViewApp.swift */; };
+		EFC257AB2D671454005A18CD /* FirstMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC257A22D671449005A18CD /* FirstMainView.swift */; };
 		EFD0FDB62D65B24E004E7201 /* FirstViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDA12D65B24E004E7201 /* FirstViewInterface.framework */; };
 		EFD0FDB72D65B24E004E7201 /* FirstViewInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDA12D65B24E004E7201 /* FirstViewInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD0FE872D65B3C6004E7201 /* FirstViewTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FE7F2D65B3C6004E7201 /* FirstViewTesting.framework */; };
 		EFD0FE882D65B3C6004E7201 /* FirstViewTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FE7F2D65B3C6004E7201 /* FirstViewTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD0FF272D65B457004E7201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD0FF202D65B457004E7201 /* Preview Assets.xcassets */; };
 		EFD0FF282D65B457004E7201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD0FF222D65B457004E7201 /* Assets.xcassets */; };
-		EFD0FF2B2D65B457004E7201 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FF172D65B457004E7201 /* FirstView.swift */; };
 		EFD0FF2F2D65B457004E7201 /* FirstViewAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FF242D65B457004E7201 /* FirstViewAppApp.swift */; };
 		EFD0FF302D65B457004E7201 /* FirstViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FF1A2D65B457004E7201 /* FirstViewAppTests.swift */; };
 		EFD0FF312D65B457004E7201 /* FirstViewAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FF1D2D65B457004E7201 /* FirstViewAppUITestsLaunchTests.swift */; };
@@ -83,11 +84,12 @@
 		EFBD13F22D643EEA0090B457 /* FirstViewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstViewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD13FC2D643EEA0090B457 /* FirstViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC254DA2D66AFCC005A18CD /* FirstViewUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstViewUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC257452D670F5D005A18CD /* FirstViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewApp.swift; sourceTree = "<group>"; };
+		EFC257A22D671449005A18CD /* FirstMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMainView.swift; sourceTree = "<group>"; };
 		EFD0FDA12D65B24E004E7201 /* FirstViewInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstViewInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FE7F2D65B3C6004E7201 /* FirstViewTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstViewTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FF142D65B457004E7201 /* FirstViewTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewTesting.h; sourceTree = "<group>"; };
 		EFD0FF152D65B457004E7201 /* FirstViewTesting.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FirstViewTesting.docc; sourceTree = "<group>"; };
-		EFD0FF172D65B457004E7201 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		EFD0FF1A2D65B457004E7201 /* FirstViewAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewAppTests.swift; sourceTree = "<group>"; };
 		EFD0FF1C2D65B457004E7201 /* FirstViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewAppUITests.swift; sourceTree = "<group>"; };
 		EFD0FF1D2D65B457004E7201 /* FirstViewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -169,8 +171,42 @@
 		EFC254EA2D66AFD4005A18CD /* FirstViewUI */ = {
 			isa = PBXGroup;
 			children = (
+				EFC257AA2D671449005A18CD /* Features */,
 			);
 			path = FirstViewUI;
+			sourceTree = "<group>";
+		};
+		EFC257A32D671449005A18CD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257A22D671449005A18CD /* FirstMainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EFC257A42D671449005A18CD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257A32D671449005A18CD /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EFC257A52D671449005A18CD /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257A42D671449005A18CD /* Sources */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		EFC257AA2D671449005A18CD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257A52D671449005A18CD /* FirstView */,
+			);
+			name = Features;
+			path = ../../../../Features/Features/Features;
 			sourceTree = "<group>";
 		};
 		EFD0FF132D65B457004E7201 /* FirstViewInterface */ = {
@@ -192,7 +228,7 @@
 		EFD0FF182D65B457004E7201 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EFD0FF172D65B457004E7201 /* FirstView.swift */,
+				EFC257452D670F5D005A18CD /* FirstViewApp.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -529,8 +565,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0FF2B2D65B457004E7201 /* FirstView.swift in Sources */,
 				EFD0FF2F2D65B457004E7201 /* FirstViewAppApp.swift in Sources */,
+				EFC257462D670F5D005A18CD /* FirstViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC257AB2D671454005A18CD /* FirstMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

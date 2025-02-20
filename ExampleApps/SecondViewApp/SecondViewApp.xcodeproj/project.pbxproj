@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		EFC254FA2D66AFED005A18CD /* SecondViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC254F22D66AFED005A18CD /* SecondViewUI.framework */; };
 		EFC254FB2D66AFED005A18CD /* SecondViewUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC254F22D66AFED005A18CD /* SecondViewUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFC255032D66AFF3005A18CD /* SecondViewUI.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC255002D66AFF3005A18CD /* SecondViewUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFC255042D66AFF3005A18CD /* SecondViewUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFC255012D66AFF3005A18CD /* SecondViewUI.docc */; };
+		EFC257BE2D67165F005A18CD /* SecondMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC257B52D67164B005A18CD /* SecondMainView.swift */; };
 		EFD0FDD92D65B27B004E7201 /* SecondViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDC42D65B27B004E7201 /* SecondViewInterface.framework */; };
 		EFD0FDDA2D65B27B004E7201 /* SecondViewInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDC42D65B27B004E7201 /* SecondViewInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD0FE9A2D65B3D2004E7201 /* SecondViewTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FE922D65B3D2004E7201 /* SecondViewTesting.framework */; };
 		EFD0FE9B2D65B3D2004E7201 /* SecondViewTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FE922D65B3D2004E7201 /* SecondViewTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFD0FF032D65B454004E7201 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FEF22D65B454004E7201 /* SecondView.swift */; };
+		EFD0FF032D65B454004E7201 /* SecondViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FEF22D65B454004E7201 /* SecondViewApp.swift */; };
 		EFD0FF072D65B454004E7201 /* SecondViewAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0FEFE2D65B454004E7201 /* SecondViewAppApp.swift */; };
 		EFD0FF082D65B454004E7201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD0FEFA2D65B454004E7201 /* Preview Assets.xcassets */; };
 		EFD0FF092D65B454004E7201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD0FEFC2D65B454004E7201 /* Assets.xcassets */; };
@@ -87,15 +86,14 @@
 		EFBD14342D643EFF0090B457 /* SecondViewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondViewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD143E2D643EFF0090B457 /* SecondViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC254F22D66AFED005A18CD /* SecondViewUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondViewUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFC255002D66AFF3005A18CD /* SecondViewUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewUI.h; sourceTree = "<group>"; };
-		EFC255012D66AFF3005A18CD /* SecondViewUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SecondViewUI.docc; sourceTree = "<group>"; };
+		EFC257B52D67164B005A18CD /* SecondMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainView.swift; sourceTree = "<group>"; };
 		EFD0FDC42D65B27B004E7201 /* SecondViewInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondViewInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FE922D65B3D2004E7201 /* SecondViewTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondViewTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FEEB2D65B454004E7201 /* SecondViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewInterface.h; sourceTree = "<group>"; };
 		EFD0FEEC2D65B454004E7201 /* SecondViewInterface.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SecondViewInterface.docc; sourceTree = "<group>"; };
 		EFD0FEEE2D65B454004E7201 /* SecondViewTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewTesting.h; sourceTree = "<group>"; };
 		EFD0FEEF2D65B454004E7201 /* SecondViewTesting.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SecondViewTesting.docc; sourceTree = "<group>"; };
-		EFD0FEF22D65B454004E7201 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		EFD0FEF22D65B454004E7201 /* SecondViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewApp.swift; sourceTree = "<group>"; };
 		EFD0FEF42D65B454004E7201 /* SecondViewAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewAppTests.swift; sourceTree = "<group>"; };
 		EFD0FEF62D65B454004E7201 /* SecondViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewAppUITests.swift; sourceTree = "<group>"; };
 		EFD0FEF72D65B454004E7201 /* SecondViewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -177,10 +175,42 @@
 		EFC255022D66AFF3005A18CD /* SecondViewUI */ = {
 			isa = PBXGroup;
 			children = (
-				EFC255002D66AFF3005A18CD /* SecondViewUI.h */,
-				EFC255012D66AFF3005A18CD /* SecondViewUI.docc */,
+				EFC257BD2D67164B005A18CD /* Features */,
 			);
 			path = SecondViewUI;
+			sourceTree = "<group>";
+		};
+		EFC257B62D67164B005A18CD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257B52D67164B005A18CD /* SecondMainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EFC257B72D67164B005A18CD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257B62D67164B005A18CD /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EFC257B82D67164B005A18CD /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257B72D67164B005A18CD /* Sources */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		EFC257BD2D67164B005A18CD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257B82D67164B005A18CD /* SecondView */,
+			);
+			name = Features;
+			path = ../../../../Features/Features/Features;
 			sourceTree = "<group>";
 		};
 		EFD0FEED2D65B454004E7201 /* SecondViewInterface */ = {
@@ -212,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD0FEF12D65B454004E7201 /* Scene */,
-				EFD0FEF22D65B454004E7201 /* SecondView.swift */,
+				EFD0FEF22D65B454004E7201 /* SecondViewApp.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -289,7 +319,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC255032D66AFF3005A18CD /* SecondViewUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0FF032D65B454004E7201 /* SecondView.swift in Sources */,
+				EFD0FF032D65B454004E7201 /* SecondViewApp.swift in Sources */,
 				EFD0FF072D65B454004E7201 /* SecondViewAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC255042D66AFF3005A18CD /* SecondViewUI.docc in Sources */,
+				EFC257BE2D67165F005A18CD /* SecondMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

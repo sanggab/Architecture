@@ -1,24 +1,19 @@
 //
-//  ThirdView.swift
+//  ThirdViewApp.swift
 //  ThirdViewApp
 //
 //  Created by Gab on 2/18/25.
 //
 
 import SwiftUI
+import ThirdViewUI
 
-struct ThirdView: View {
+struct ThirdViewApp: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ThirdMainView()
     }
 }
 
 #Preview {
-    ThirdView()
+    ThirdViewApp()
 }

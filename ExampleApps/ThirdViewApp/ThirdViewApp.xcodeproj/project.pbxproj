@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		EFC255122D66B002005A18CD /* ThirdViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC2550A2D66B002005A18CD /* ThirdViewUI.framework */; };
 		EFC255132D66B002005A18CD /* ThirdViewUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC2550A2D66B002005A18CD /* ThirdViewUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFC2551B2D66B008005A18CD /* ThirdViewUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFC255192D66B008005A18CD /* ThirdViewUI.docc */; };
-		EFC2551C2D66B008005A18CD /* ThirdViewUI.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC255182D66B008005A18CD /* ThirdViewUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFC257CC2D671674005A18CD /* ThirdMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC257C72D67166E005A18CD /* ThirdMainView.swift */; };
 		EFD0FDF02D65B2B0004E7201 /* ThirdViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */; };
 		EFD0FDF12D65B2B0004E7201 /* ThirdViewInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD0FEAD2D65B3DD004E7201 /* ThirdViewTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FEA52D65B3DD004E7201 /* ThirdViewTesting.framework */; };
@@ -87,8 +86,7 @@
 		EFBD14762D6446340090B457 /* ThirdViewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdViewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD14802D6446340090B457 /* ThirdViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC2550A2D66B002005A18CD /* ThirdViewUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdViewUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFC255182D66B008005A18CD /* ThirdViewUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewUI.h; sourceTree = "<group>"; };
-		EFC255192D66B008005A18CD /* ThirdViewUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ThirdViewUI.docc; sourceTree = "<group>"; };
+		EFC257C72D67166E005A18CD /* ThirdMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdMainView.swift; sourceTree = "<group>"; };
 		EFD0FDE82D65B2B0004E7201 /* ThirdViewInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdViewInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FEA52D65B3DD004E7201 /* ThirdViewTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdViewTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0FEC52D65B450004E7201 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
@@ -177,10 +175,42 @@
 		EFC2551A2D66B008005A18CD /* ThirdViewUI */ = {
 			isa = PBXGroup;
 			children = (
-				EFC255182D66B008005A18CD /* ThirdViewUI.h */,
-				EFC255192D66B008005A18CD /* ThirdViewUI.docc */,
+				EFC257CB2D67166E005A18CD /* Features */,
 			);
 			path = ThirdViewUI;
+			sourceTree = "<group>";
+		};
+		EFC257C82D67166E005A18CD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257C72D67166E005A18CD /* ThirdMainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EFC257C92D67166E005A18CD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257C82D67166E005A18CD /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EFC257CA2D67166E005A18CD /* ThirdView */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257C92D67166E005A18CD /* Sources */,
+			);
+			path = ThirdView;
+			sourceTree = "<group>";
+		};
+		EFC257CB2D67166E005A18CD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257CA2D67166E005A18CD /* ThirdView */,
+			);
+			name = Features;
+			path = ../../../../Features/Features/Features;
 			sourceTree = "<group>";
 		};
 		EFD0FEC62D65B450004E7201 /* Scene */ = {
@@ -289,7 +319,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC2551C2D66B008005A18CD /* ThirdViewUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC2551B2D66B008005A18CD /* ThirdViewUI.docc in Sources */,
+				EFC257CC2D671674005A18CD /* ThirdMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

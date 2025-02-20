@@ -1,5 +1,5 @@
 //
-//  FirstMainView.swift
+//  SecondMainView.swift
 //  Features
 //
 //  Created by Gab on 2/20/25.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-public struct FirstMainView: View {
-    
+public struct SecondMainView: View {
     public init() { }
     
     public var body: some View {
-        Text("FirstMainView")
+        Text("SecondMainView")
     }
 }
 
 #Preview {
-    FirstMainView()
+    SecondMainView()
 }
