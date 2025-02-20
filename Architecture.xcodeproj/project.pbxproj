@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFD0FD872D656445004E7201 /* FirstViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */; };
-		EFD0FD922D656445004E7201 /* FirstViewInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */; };
-		EFD0FD932D656445004E7201 /* FirstViewInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFC257412D670D7A005A18CD /* Features.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC2573A2D66FCF4005A18CD /* Features.framework */; };
+		EFC257422D670D7A005A18CD /* Features.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC2573A2D66FCF4005A18CD /* Features.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,26 +26,12 @@
 			remoteGlobalIDString = EFBD1F792D641083003426F4;
 			remoteInfo = Architecture;
 		};
-		EFD0FD882D656445004E7201 /* PBXContainerItemProxy */ = {
+		EFC257392D66FCF4005A18CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFD0FD7C2D656445004E7201;
-			remoteInfo = FirstViewInterface;
-		};
-		EFD0FD8A2D656445004E7201 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFBD1F792D641083003426F4;
-			remoteInfo = Architecture;
-		};
-		EFD0FD902D656445004E7201 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFBD1F722D641083003426F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFD0FD7C2D656445004E7201;
-			remoteInfo = FirstViewInterface;
+			containerPortal = EFC257352D66FCF4005A18CD /* Features.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EFC257282D66FCF3005A18CD;
+			remoteInfo = Features;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EFD0FD932D656445004E7201 /* FirstViewInterface.framework in Embed Frameworks */,
+				EFC257422D670D7A005A18CD /* Features.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,9 +56,7 @@
 		EFBD1F7A2D641083003426F4 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstViewInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD0FD862D656445004E7201 /* FirstViewInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstViewInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD0FE6E2D65B33E004E7201 /* Features.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Features.xcodeproj; path = Features/Features.xcodeproj; sourceTree = "<group>"; };
+		EFC257352D66FCF4005A18CD /* Features.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Features.xcodeproj; path = Features/Features.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -99,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0FD922D656445004E7201 /* FirstViewInterface.framework in Frameworks */,
+				EFC257412D670D7A005A18CD /* Features.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,32 +100,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFD0FD7A2D656445004E7201 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFD0FD832D656445004E7201 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFD0FD872D656445004E7201 /* FirstViewInterface.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EFBD13D82D643ED90090B457 /* Modules */ = {
+		EFBD13D82D643ED90090B457 /* ExampleApps */ = {
 			isa = PBXGroup;
 			children = (
 				EFBD140F2D643EEA0090B457 /* FirstViewApp.xcodeproj */,
 				EFBD14512D643F000090B457 /* SecondViewApp.xcodeproj */,
 				EFBD14932D6446340090B457 /* ThirdViewApp.xcodeproj */,
 			);
-			path = Modules;
+			path = ExampleApps;
 			sourceTree = "<group>";
 		};
 		EFBD1F712D641083003426F4 = {
@@ -151,8 +119,9 @@
 				EFBD1F7C2D641083003426F4 /* Architecture */,
 				EFBD1F8D2D641086003426F4 /* ArchitectureTests */,
 				EFBD1F972D641086003426F4 /* ArchitectureUITests */,
-				EFD0FE372D65B315004E7201 /* Feature */,
-				EFBD13D82D643ED90090B457 /* Modules */,
+				EFC2571C2D66FCA4005A18CD /* Features */,
+				EFBD13D82D643ED90090B457 /* ExampleApps */,
+				EFC257402D670D7A005A18CD /* Frameworks */,
 				EFBD1F7B2D641083003426F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,10 +132,31 @@
 				EFBD1F7A2D641083003426F4 /* Architecture.app */,
 				EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */,
 				EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */,
-				EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */,
-				EFD0FD862D656445004E7201 /* FirstViewInterfaceTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EFC2571C2D66FCA4005A18CD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EFC257352D66FCF4005A18CD /* Features.xcodeproj */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EFC257362D66FCF4005A18CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFC2573A2D66FCF4005A18CD /* Features.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFC257402D670D7A005A18CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EFD0FCBE2D64673D004E7201 /* Products */ = {
@@ -190,25 +180,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFD0FE372D65B315004E7201 /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				EFD0FE6E2D65B33E004E7201 /* Features.xcodeproj */,
-			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		EFD0FD782D656445004E7201 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EFBD1F792D641083003426F4 /* Architecture */ = {
@@ -223,7 +195,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EFD0FD912D656445004E7201 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				EFBD1F7C2D641083003426F4 /* Architecture */,
@@ -281,47 +252,6 @@
 			productReference = EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		EFD0FD7C2D656445004E7201 /* FirstViewInterface */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EFD0FD952D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterface" */;
-			buildPhases = (
-				EFD0FD782D656445004E7201 /* Headers */,
-				EFD0FD792D656445004E7201 /* Sources */,
-				EFD0FD7A2D656445004E7201 /* Frameworks */,
-				EFD0FD7B2D656445004E7201 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FirstViewInterface;
-			packageProductDependencies = (
-			);
-			productName = FirstViewInterface;
-			productReference = EFD0FD7D2D656445004E7201 /* FirstViewInterface.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EFD0FD852D656445004E7201 /* FirstViewInterfaceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EFD0FD992D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterfaceTests" */;
-			buildPhases = (
-				EFD0FD822D656445004E7201 /* Sources */,
-				EFD0FD832D656445004E7201 /* Frameworks */,
-				EFD0FD842D656445004E7201 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EFD0FD892D656445004E7201 /* PBXTargetDependency */,
-				EFD0FD8B2D656445004E7201 /* PBXTargetDependency */,
-			);
-			name = FirstViewInterfaceTests;
-			packageProductDependencies = (
-			);
-			productName = FirstViewInterfaceTests;
-			productReference = EFD0FD862D656445004E7201 /* FirstViewInterfaceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -343,13 +273,6 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = EFBD1F792D641083003426F4;
 					};
-					EFD0FD7C2D656445004E7201 = {
-						CreatedOnToolsVersion = 16.0;
-					};
-					EFD0FD852D656445004E7201 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = EFBD1F792D641083003426F4;
-					};
 				};
 			};
 			buildConfigurationList = EFBD1F752D641083003426F4 /* Build configuration list for PBXProject "Architecture" */;
@@ -365,6 +288,10 @@
 			productRefGroup = EFBD1F7B2D641083003426F4 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = EFC257362D66FCF4005A18CD /* Products */;
+					ProjectRef = EFC257352D66FCF4005A18CD /* Features.xcodeproj */;
+				},
 				{
 					ProductGroup = EFD0FCBE2D64673D004E7201 /* Products */;
 					ProjectRef = EFBD140F2D643EEA0090B457 /* FirstViewApp.xcodeproj */;
@@ -383,11 +310,19 @@
 				EFBD1F792D641083003426F4 /* Architecture */,
 				EFBD1F892D641086003426F4 /* ArchitectureTests */,
 				EFBD1F932D641086003426F4 /* ArchitectureUITests */,
-				EFD0FD7C2D656445004E7201 /* FirstViewInterface */,
-				EFD0FD852D656445004E7201 /* FirstViewInterfaceTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EFC2573A2D66FCF4005A18CD /* Features.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Features.framework;
+			remoteRef = EFC257392D66FCF4005A18CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFBD1F782D641083003426F4 /* Resources */ = {
@@ -405,20 +340,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EFBD1F922D641086003426F4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFD0FD7B2D656445004E7201 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFD0FD842D656445004E7201 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,20 +370,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFD0FD792D656445004E7201 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFD0FD822D656445004E7201 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -475,21 +382,6 @@
 			isa = PBXTargetDependency;
 			target = EFBD1F792D641083003426F4 /* Architecture */;
 			targetProxy = EFBD1F952D641086003426F4 /* PBXContainerItemProxy */;
-		};
-		EFD0FD892D656445004E7201 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFD0FD7C2D656445004E7201 /* FirstViewInterface */;
-			targetProxy = EFD0FD882D656445004E7201 /* PBXContainerItemProxy */;
-		};
-		EFD0FD8B2D656445004E7201 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFBD1F792D641083003426F4 /* Architecture */;
-			targetProxy = EFD0FD8A2D656445004E7201 /* PBXContainerItemProxy */;
-		};
-		EFD0FD912D656445004E7201 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFD0FD7C2D656445004E7201 /* FirstViewInterface */;
-			targetProxy = EFD0FD902D656445004E7201 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -747,114 +639,6 @@
 			};
 			name = Release;
 		};
-		EFD0FD962D656445004E7201 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Z93APRK365;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterface;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EFD0FD972D656445004E7201 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Z93APRK365;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterface;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EFD0FD9A2D656445004E7201 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JA868URLCA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterfaceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Architecture";
-			};
-			name = Debug;
-		};
-		EFD0FD9B2D656445004E7201 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JA868URLCA;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.FirstViewInterfaceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Architecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Architecture";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -890,24 +674,6 @@
 			buildConfigurations = (
 				EFBD1FA52D641086003426F4 /* Debug */,
 				EFBD1FA62D641086003426F4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFD0FD952D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterface" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EFD0FD962D656445004E7201 /* Debug */,
-				EFD0FD972D656445004E7201 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFD0FD992D656445004E7201 /* Build configuration list for PBXNativeTarget "FirstViewInterfaceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EFD0FD9A2D656445004E7201 /* Debug */,
-				EFD0FD9B2D656445004E7201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
