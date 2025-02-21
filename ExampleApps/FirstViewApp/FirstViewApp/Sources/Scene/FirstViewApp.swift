@@ -10,7 +10,8 @@ import FirstViewUI
 
 struct FirstViewApp: View {
     var body: some View {
-        FirstMainView()
+//        FirstMainView()
+        Text("hoho")
     }
 }
 
