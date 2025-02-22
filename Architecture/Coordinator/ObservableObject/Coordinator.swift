@@ -62,7 +62,7 @@ extension Coordinator: FirstViewCoordinatorFlowFeature {
     }
 }
 
-class FirstViewFlow: FirstViewCoordinatorFlowFeature {
+final class FirstViewFlow: FirstViewCoordinatorFlowFeature {
     func pushSecond() {
         print("상갑 logEvent FirstViewFlow \(#function)")
     }
