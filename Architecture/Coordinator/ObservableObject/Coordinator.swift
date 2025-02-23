@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import Features
 
 enum Page: Equatable {
-    case first
-    case second
-    case third
+    case map
+    case likesyou
+    case messageList
+    case message
 }
 
 protocol CoordinatorFlowFeatures: ObservableObject {
@@ -25,10 +25,10 @@ protocol CoordinatorFlowFeatures: ObservableObject {
 final class Coordinator: CoordinatorFlowFeatures {
     @Published private var navigationViews: [Page] = []
     
-    var first: FirstViewCoordinatorFlowFeature = FirstViewFlow()
+    var mapViewCoordinatorInterface: MapViewFlowCoordinatorInterface = MapViewCoordinator()
     
     init() {
-        self.first = self
+        self.mapViewCoordinatorInterface = self
     }
     
     var navigationPathBinding: Binding<[Page]> {
@@ -52,18 +52,5 @@ final class Coordinator: CoordinatorFlowFeatures {
     func popToRoot() {
         print("상갑 logEvent \(#function)")
         self.navigationViews.removeAll()
-    }
-}
-
-extension Coordinator: FirstViewCoordinatorFlowFeature {
-    func pushSecond() {
-        print("상갑 logEvent Coordinator \(#function)")
-        self.push(page: .second)
-    }
-}
-
-final class FirstViewFlow: FirstViewCoordinatorFlowFeature {
-    func pushSecond() {
-        print("상갑 logEvent FirstViewFlow \(#function)")
     }
 }

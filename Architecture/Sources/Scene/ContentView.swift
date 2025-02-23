@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Features
 
 struct ContentView: View {
     @StateObject private var coordinator: Coordinator = .init()
@@ -22,7 +21,7 @@ struct ContentView: View {
                             Text("첫 번째 뷰 푸시")
                         }
                         .onTapGesture {
-                            coordinator.push(page: .first)
+//                            coordinator.push(page: .first)
                         }
                     
                     Rectangle()
@@ -31,7 +30,7 @@ struct ContentView: View {
                             Text("두 번째 뷰 푸시")
                         }
                         .onTapGesture {
-                            coordinator.push(page: .second)
+//                            coordinator.push(page: .second)
                         }
                     
                     Rectangle()
@@ -40,7 +39,7 @@ struct ContentView: View {
                             Text("세 번째 뷰 푸시")
                         }
                         .onTapGesture {
-                            coordinator.push(page: .third)
+//                            coordinator.push(page: .third)
                         }
                 }
                 .frame(height: 50)

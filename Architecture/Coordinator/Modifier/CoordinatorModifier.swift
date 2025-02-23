@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Features
+import MapViewFeature
 
 struct CoordinatorModifier: ViewModifier {
     @EnvironmentObject private var coordinator: Coordinator
@@ -15,12 +15,16 @@ struct CoordinatorModifier: ViewModifier {
         content
             .navigationDestination(for: Page.self) { page in
                 switch page {
-                case .first:
-                    FirstMainView(coordinator: coordinator.first)
-                case .second:
-                    SecondMainView()
-                case .third:
-                    ThirdMainView()
+                case .map:
+                    EmptyView()
+                default:
+                    EmptyView()
+//                case .likesyou:
+//                    
+//                case .messageList:
+//                    
+//                case .message:
+//
                 }
             }
     }
