@@ -15,4 +15,13 @@ public protocol MapFlowCoordinatorInterface {
     func openLikesyouView()
 }
 
-
+final public class MockingMapFlowCoordinator: MapFlowCoordinatorInterface {
+    
+    public init() {
+        
+    }
+    
+    public func openLikesyouView() {
+        print(#function)
+    }
+}

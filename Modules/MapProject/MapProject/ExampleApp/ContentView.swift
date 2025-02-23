@@ -11,7 +11,7 @@ import MapInterface
 
 struct ContentView: View {
     var body: some View {
-        Text("MapExampleApp")
+        MapFeatureView(coordinator: MockingMapFlowCoordinator())
     }
 }
 

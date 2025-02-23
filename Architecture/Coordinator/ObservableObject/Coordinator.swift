@@ -64,6 +64,6 @@ extension Coordinator: MapFlowCoordinatorInterface {
 
 final class MapFlowCoordinator: MapFlowCoordinatorInterface {
     func openLikesyouView() {
-        print(#function)
+        print("MapFlowCoordinator \(#function)")
     }
 }
