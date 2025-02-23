@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B02A0522D6B173B004895A8 /* MapViewFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B045CA02D6A2BA7007A2C4C /* MapViewFeature.framework */; };
-		4B02A0532D6B173B004895A8 /* MapViewFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B045CA02D6A2BA7007A2C4C /* MapViewFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B02A2212D6B5FDF004895A8 /* MapProject.app in Resources */ = {isa = PBXBuildFile; fileRef = 4B02A1D02D6B598C004895A8 /* MapProject.app */; };
+		4B02A2222D6B5FE4004895A8 /* MapFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */; };
+		4B02A2232D6B5FE4004895A8 /* MapFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B02A28A2D6B633E004895A8 /* LikesyouFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */; };
+		4B02A28B2D6B633E004895A8 /* LikesyouFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B045B672D69DD39007A2C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B045B5F2D69DD39007A2C4C /* Preview Assets.xcassets */; };
 		4B045B682D69DD39007A2C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B045B612D69DD39007A2C4C /* Assets.xcassets */; };
 		4B045B692D69DD39007A2C4C /* CoordinatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B572D69DD39007A2C4C /* CoordinatorModifier.swift */; };
@@ -19,17 +22,23 @@
 		4B045B702D69DD3D007A2C4C /* ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B6E2D69DD3D007A2C4C /* ArchitectureTests.swift */; };
 		4B045B742D69DD40007A2C4C /* ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B712D69DD40007A2C4C /* ArchitectureUITests.swift */; };
 		4B045B752D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B722D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift */; };
-		4B045CB52D6A2C89007A2C4C /* Coordinator + mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045CB42D6A2C89007A2C4C /* Coordinator + mapView.swift */; };
 		4B045CBB2D6A2CF1007A2C4C /* CoordinatorExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045CB92D6A2CF1007A2C4C /* CoordinatorExport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B045C9F2D6A2BA7007A2C4C /* PBXContainerItemProxy */ = {
+		4B02A1CF2D6B598C004895A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4B0459B12D69D834007A2C4C /* MapView.xcodeproj */;
+			containerPortal = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 4B045C5C2D6A2AB3007A2C4C;
-			remoteInfo = MapViewFeature;
+			remoteGlobalIDString = 4B02A1BA2D6B598A004895A8;
+			remoteInfo = MapProject;
+		};
+		4B02A2192D6B5EF4004895A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B02A1D62D6B599B004895A8;
+			remoteInfo = MapFeature;
 		};
 		EFBD1F8B2D641086003426F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -48,13 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4B02A0542D6B173B004895A8 /* Embed Frameworks */ = {
+		4B02A2242D6B5FE4004895A8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4B02A0532D6B173B004895A8 /* MapViewFeature.framework in Embed Frameworks */,
+				4B02A28B2D6B633E004895A8 /* LikesyouFeature.framework in Embed Frameworks */,
+				4B02A2232D6B5FE4004895A8 /* MapFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,10 +73,9 @@
 
 /* Begin PBXFileReference section */
 		4B02A0D22D6B1E49004895A8 /* TestProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestProject.xcodeproj; path = TestProject/TestProject.xcodeproj; sourceTree = "<group>"; };
-		4B0459B12D69D834007A2C4C /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = MapView/MapView.xcodeproj; sourceTree = "<group>"; };
-		4B045A292D69D855007A2C4C /* LikesyouView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LikesyouView.xcodeproj; path = LikesyouView/LikesyouView.xcodeproj; sourceTree = "<group>"; };
-		4B045A6B2D69D86C007A2C4C /* MessageView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MessageView.xcodeproj; path = MessageView/MessageView.xcodeproj; sourceTree = "<group>"; };
-		4B045AAD2D69D87A007A2C4C /* MessageListView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MessageListView.xcodeproj; path = MessageListView/MessageListView.xcodeproj; sourceTree = "<group>"; };
+		4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapProject.xcodeproj; path = MapProject/MapProject.xcodeproj; sourceTree = "<group>"; };
+		4B02A24B2D6B627E004895A8 /* LikesyouProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LikesyouProject.xcodeproj; path = LikesyouProject/LikesyouProject.xcodeproj; sourceTree = "<group>"; };
+		4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LikesyouFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B045B572D69DD39007A2C4C /* CoordinatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorModifier.swift; sourceTree = "<group>"; };
 		4B045B592D69DD39007A2C4C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4B045B5C2D69DD39007A2C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,7 +86,6 @@
 		4B045B6E2D69DD3D007A2C4C /* ArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureTests.swift; sourceTree = "<group>"; };
 		4B045B712D69DD40007A2C4C /* ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUITests.swift; sourceTree = "<group>"; };
 		4B045B722D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4B045CB42D6A2C89007A2C4C /* Coordinator + mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator + mapView.swift"; sourceTree = "<group>"; };
 		4B045CB92D6A2CF1007A2C4C /* CoordinatorExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorExport.swift; sourceTree = "<group>"; };
 		EFBD1F7A2D641083003426F4 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B02A0522D6B173B004895A8 /* MapViewFeature.framework in Frameworks */,
+				4B02A28A2D6B633E004895A8 /* LikesyouFeature.framework in Frameworks */,
+				4B02A2222D6B5FE4004895A8 /* MapFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,14 +126,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4B02A1CC2D6B598B004895A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B02A1D02D6B598C004895A8 /* MapProject.app */,
+				4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4B0459372D69D7E0007A2C4C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */,
+				4B02A24B2D6B627E004895A8 /* LikesyouProject.xcodeproj */,
 				4B02A0D22D6B1E49004895A8 /* TestProject.xcodeproj */,
-				4B0459B12D69D834007A2C4C /* MapView.xcodeproj */,
-				4B045A292D69D855007A2C4C /* LikesyouView.xcodeproj */,
-				4B045AAD2D69D87A007A2C4C /* MessageListView.xcodeproj */,
-				4B045A6B2D69D86C007A2C4C /* MessageView.xcodeproj */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -141,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				4B045B592D69DD39007A2C4C /* Coordinator.swift */,
-				4B045CB42D6A2C89007A2C4C /* Coordinator + mapView.swift */,
 			);
 			path = ObservableObject;
 			sourceTree = "<group>";
@@ -226,35 +241,6 @@
 			path = ArchitectureUITests;
 			sourceTree = "<group>";
 		};
-		4B045C7E2D6A2BA7007A2C4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4B045C802D6A2BA7007A2C4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4B045C822D6A2BA7007A2C4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4B045C842D6A2BA7007A2C4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4B045CA02D6A2BA7007A2C4C /* MapViewFeature.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4B045CBA2D6A2CF1007A2C4C /* Export */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +274,7 @@
 		EFC257402D670D7A005A18CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,7 +289,7 @@
 				EFBD1F762D641083003426F4 /* Sources */,
 				EFBD1F772D641083003426F4 /* Frameworks */,
 				EFBD1F782D641083003426F4 /* Resources */,
-				4B02A0542D6B173B004895A8 /* Embed Frameworks */,
+				4B02A2242D6B5FE4004895A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,20 +379,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4B045C7E2D6A2BA7007A2C4C /* Products */;
-					ProjectRef = 4B045A292D69D855007A2C4C /* LikesyouView.xcodeproj */;
-				},
-				{
-					ProductGroup = 4B045C842D6A2BA7007A2C4C /* Products */;
-					ProjectRef = 4B0459B12D69D834007A2C4C /* MapView.xcodeproj */;
-				},
-				{
-					ProductGroup = 4B045C822D6A2BA7007A2C4C /* Products */;
-					ProjectRef = 4B045AAD2D69D87A007A2C4C /* MessageListView.xcodeproj */;
-				},
-				{
-					ProductGroup = 4B045C802D6A2BA7007A2C4C /* Products */;
-					ProjectRef = 4B045A6B2D69D86C007A2C4C /* MessageView.xcodeproj */;
+					ProductGroup = 4B02A1CC2D6B598B004895A8 /* Products */;
+					ProjectRef = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
 				},
 				{
 					ProductGroup = 4B02A0D32D6B1E49004895A8 /* Products */;
@@ -422,11 +397,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4B045CA02D6A2BA7007A2C4C /* MapViewFeature.framework */ = {
+		4B02A1D02D6B598C004895A8 /* MapProject.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MapProject.app;
+			remoteRef = 4B02A1CF2D6B598C004895A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = MapViewFeature.framework;
-			remoteRef = 4B045C9F2D6A2BA7007A2C4C /* PBXContainerItemProxy */;
+			path = MapFeature.framework;
+			remoteRef = 4B02A2192D6B5EF4004895A8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -436,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B02A2212D6B5FDF004895A8 /* MapProject.app in Resources */,
 				4B045B672D69DD39007A2C4C /* Preview Assets.xcassets in Resources */,
 				4B045B682D69DD39007A2C4C /* Assets.xcassets in Resources */,
 			);
@@ -467,7 +450,6 @@
 				4B045B6B2D69DD39007A2C4C /* ContentView.swift in Sources */,
 				4B045B6C2D69DD39007A2C4C /* ArchitectureApp.swift in Sources */,
 				4B045CBB2D6A2CF1007A2C4C /* CoordinatorExport.swift in Sources */,
-				4B045CB52D6A2C89007A2C4C /* Coordinator + mapView.swift in Sources */,
 				4B045B6D2D69DD39007A2C4C /* Architecture.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

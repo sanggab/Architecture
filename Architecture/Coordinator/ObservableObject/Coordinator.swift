@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapInterface
 
 enum Page: Equatable {
     case map
@@ -25,7 +26,7 @@ protocol CoordinatorFlowFeatures: ObservableObject {
 final class Coordinator: CoordinatorFlowFeatures {
     @Published private var navigationViews: [Page] = []
     
-    var mapViewCoordinatorInterface: MapViewFlowCoordinatorInterface = MapViewCoordinator()
+    var mapViewCoordinatorInterface: MapFlowCoordinatorInterface = MapFlowCoordinator()
     
     init() {
         self.mapViewCoordinatorInterface = self
@@ -52,5 +53,17 @@ final class Coordinator: CoordinatorFlowFeatures {
     func popToRoot() {
         print("상갑 logEvent \(#function)")
         self.navigationViews.removeAll()
+    }
+}
+
+extension Coordinator: MapFlowCoordinatorInterface {
+    func openLikesyouView() {
+        self.navigationViews.append(.likesyou)
+    }
+}
+
+final class MapFlowCoordinator: MapFlowCoordinatorInterface {
+    func openLikesyouView() {
+        print(#function)
     }
 }

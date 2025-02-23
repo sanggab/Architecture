@@ -3,20 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>LikesyouExampleApp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4B02A0C02D6B1E48004895A8</key>
+		<key>4B02A2392D6B627D004895A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B02A0DC2D6B1E65004895A8</key>
+		<key>4B02A2552D6B62A5004895A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B02A0F02D6B1E6D004895A8</key>
+		<key>4B02A2672D6B62AE004895A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4B02A2782D6B62B7004895A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

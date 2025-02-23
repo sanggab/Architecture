@@ -21,7 +21,7 @@ struct ContentView: View {
                             Text("첫 번째 뷰 푸시")
                         }
                         .onTapGesture {
-//                            coordinator.push(page: .first)
+                            coordinator.push(page: .map)
                         }
                     
                     Rectangle()

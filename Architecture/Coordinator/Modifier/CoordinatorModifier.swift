@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import MapViewFeature
+import MapFeature
+import LikesyouFeature
 
 struct CoordinatorModifier: ViewModifier {
     @EnvironmentObject private var coordinator: Coordinator
@@ -16,7 +17,9 @@ struct CoordinatorModifier: ViewModifier {
             .navigationDestination(for: Page.self) { page in
                 switch page {
                 case .map:
-                    EmptyView()
+                    MapFeatureView(coordinator: coordinator.mapViewCoordinatorInterface)
+                case .likesyou:
+                    LikesyouFeatureView()
                 default:
                     EmptyView()
 //                case .likesyou:
