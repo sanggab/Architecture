@@ -30,7 +30,7 @@ struct ContentView: View {
                             Text("두 번째 뷰 푸시")
                         }
                         .onTapGesture {
-//                            coordinator.push(page: .second)
+                            coordinator.push(page: .likesyou)
                         }
                     
                     Rectangle()
@@ -39,7 +39,7 @@ struct ContentView: View {
                             Text("세 번째 뷰 푸시")
                         }
                         .onTapGesture {
-//                            coordinator.push(page: .third)
+                            coordinator.push(page: .test)
                         }
                 }
                 .frame(height: 50)

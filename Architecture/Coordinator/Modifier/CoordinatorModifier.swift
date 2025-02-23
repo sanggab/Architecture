@@ -8,6 +8,8 @@
 import SwiftUI
 import MapFeature
 import LikesyouFeature
+import TestViewFeature
+import TestViewInterface
 
 struct CoordinatorModifier: ViewModifier {
     @EnvironmentObject private var coordinator: Coordinator
@@ -20,6 +22,8 @@ struct CoordinatorModifier: ViewModifier {
                     MapFeatureView(coordinator: coordinator.mapViewCoordinatorInterface)
                 case .likesyou:
                     LikesyouFeatureView()
+                case .test:
+                    TestViewFeatureView(sceneModel: self.injectionTestViewOpenInterface())
                 default:
                     EmptyView()
 //                case .likesyou:
@@ -31,4 +35,14 @@ struct CoordinatorModifier: ViewModifier {
                 }
             }
     }
+}
+
+extension CoordinatorModifier {
+    func injectionTestViewOpenInterface() -> TestViewOpenInterface {
+        let interactor: TestViewInteractor = .init(coordinator: coordinator)
+        let sceneModel: TestViewOpenInterface = TestViewSceneModel(interactor: interactor)
+        
+        return sceneModel
+    }
+    
 }
