@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B02A2212D6B5FDF004895A8 /* MapExampleApp.app in Resources */ = {isa = PBXBuildFile; fileRef = 4B02A1D02D6B598C004895A8 /* MapExampleApp.app */; };
-		4B02A2222D6B5FE4004895A8 /* MapFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */; };
-		4B02A2232D6B5FE4004895A8 /* MapFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B02A28A2D6B633E004895A8 /* LikesyouFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */; };
 		4B02A28B2D6B633E004895A8 /* LikesyouFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4B02A2A22D6B7324004895A8 /* TestViewFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A1152D6B1E78004895A8 /* TestViewFeature.framework */; };
-		4B02A2A32D6B7324004895A8 /* TestViewFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B02A1152D6B1E78004895A8 /* TestViewFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B045B672D69DD39007A2C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B045B5F2D69DD39007A2C4C /* Preview Assets.xcassets */; };
 		4B045B682D69DD39007A2C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B045B612D69DD39007A2C4C /* Assets.xcassets */; };
 		4B045B692D69DD39007A2C4C /* CoordinatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B572D69DD39007A2C4C /* CoordinatorModifier.swift */; };
@@ -30,27 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B02A1142D6B1E78004895A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4B02A0D22D6B1E49004895A8 /* TestProject.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B02A0DD2D6B1E65004895A8;
-			remoteInfo = TestViewFeature;
-		};
-		4B02A1CF2D6B598C004895A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B02A1BA2D6B598A004895A8;
-			remoteInfo = MapProject;
-		};
-		4B02A2192D6B5EF4004895A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B02A1D62D6B599B004895A8;
-			remoteInfo = MapFeature;
-		};
 		EF40F9202D6C29FC000C1DA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EF40F91C2D6C29FC000C1DA1 /* Domain.xcodeproj */;
@@ -83,8 +57,6 @@
 			files = (
 				EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */,
 				4B02A28B2D6B633E004895A8 /* LikesyouFeature.framework in Embed Frameworks */,
-				4B02A2232D6B5FE4004895A8 /* MapFeature.framework in Embed Frameworks */,
-				4B02A2A32D6B7324004895A8 /* TestViewFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,8 +92,6 @@
 			files = (
 				EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */,
 				4B02A28A2D6B633E004895A8 /* LikesyouFeature.framework in Frameworks */,
-				4B02A2222D6B5FE4004895A8 /* MapFeature.framework in Frameworks */,
-				4B02A2A22D6B7324004895A8 /* TestViewFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B02A0D32D6B1E49004895A8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4B02A1152D6B1E78004895A8 /* TestViewFeature.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4B02A1CC2D6B598B004895A8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4B02A1D02D6B598C004895A8 /* MapExampleApp.app */,
-				4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4B0459372D69D7E0007A2C4C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +197,7 @@
 				4B045B5E2D69DD39007A2C4C /* Sources */,
 				4B045B622D69DD39007A2C4C /* Utils */,
 				4B045B642D69DD39007A2C4C /* WindowGroup */,
+				4B0459372D69D7E0007A2C4C /* Modules */,
 				4B045B652D69DD39007A2C4C /* Architecture.docc */,
 			);
 			path = Architecture;
@@ -282,13 +236,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EFB0E2C22D6C31B9002CB231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB0E2C42D6C31B9002CB231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB0E2C62D6C31B9002CB231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EFBD1F712D641083003426F4 = {
 			isa = PBXGroup;
 			children = (
 				4B045B662D69DD39007A2C4C /* Architecture */,
 				4B045B6F2D69DD3D007A2C4C /* ArchitectureTests */,
 				4B045B732D69DD40007A2C4C /* ArchitectureUITests */,
-				4B0459372D69D7E0007A2C4C /* Modules */,
 				EFC257402D670D7A005A18CD /* Frameworks */,
 				EFBD1F7B2D641083003426F4 /* Products */,
 			);
@@ -310,13 +284,6 @@
 				4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EFC69B162D6BF1CA0055235F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		EFC69C2B2D6C29930055235F /* Domain */ = {
@@ -431,15 +398,15 @@
 					ProjectRef = EF40F91C2D6C29FC000C1DA1 /* Domain.xcodeproj */;
 				},
 				{
-					ProductGroup = EFC69B162D6BF1CA0055235F /* Products */;
+					ProductGroup = EFB0E2C42D6C31B9002CB231 /* Products */;
 					ProjectRef = 4B02A24B2D6B627E004895A8 /* LikesyouProject.xcodeproj */;
 				},
 				{
-					ProductGroup = 4B02A1CC2D6B598B004895A8 /* Products */;
+					ProductGroup = EFB0E2C22D6C31B9002CB231 /* Products */;
 					ProjectRef = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
 				},
 				{
-					ProductGroup = 4B02A0D32D6B1E49004895A8 /* Products */;
+					ProductGroup = EFB0E2C62D6C31B9002CB231 /* Products */;
 					ProjectRef = 4B02A0D22D6B1E49004895A8 /* TestProject.xcodeproj */;
 				},
 			);
@@ -453,27 +420,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4B02A1152D6B1E78004895A8 /* TestViewFeature.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = TestViewFeature.framework;
-			remoteRef = 4B02A1142D6B1E78004895A8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4B02A1D02D6B598C004895A8 /* MapExampleApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = MapExampleApp.app;
-			remoteRef = 4B02A1CF2D6B598C004895A8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4B02A21A2D6B5EF4004895A8 /* MapFeature.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MapFeature.framework;
-			remoteRef = 4B02A2192D6B5EF4004895A8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		EF40F9212D6C29FC000C1DA1 /* Domain.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -488,7 +434,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B02A2212D6B5FDF004895A8 /* MapExampleApp.app in Resources */,
 				4B045B672D69DD39007A2C4C /* Preview Assets.xcassets in Resources */,
 				4B045B682D69DD39007A2C4C /* Assets.xcassets in Resources */,
 			);
