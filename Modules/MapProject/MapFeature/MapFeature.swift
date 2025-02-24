@@ -6,22 +6,30 @@
 //
 
 import SwiftUI
+
 import MapInterface
 
 public struct MapFeatureView: View {
-    @ObservedObject private var sceneModel: MapSceneModel
     
-    public init(coordinator: MapFlowCoordinatorInterface) {
-        self.sceneModel = MapSceneModel(coordinator: coordinator)
+    @ObservedObject private var viewModel: MapViewModel = .init()
+    private var presentor: MapPresentor
+    
+    public init(presentor: MapPresentor) {
+        self.presentor = presentor
     }
     
     public var body: some View {
-        Text("MapFeature")
-        
-        Button {
-            self.sceneModel.openLikesyou()
-        } label: {
-            Text("Open Likes you")
+        Group {
+            Text("MapFeature")
+            
+            Button {
+                viewModel.openLikesYou()
+            } label: {
+                Text("Open Likes you")
+            }
+        }
+        .task {
+            self.presentor.bindMapVieWModel(viewModel.getMapViewModelCommunication())
         }
 
     }

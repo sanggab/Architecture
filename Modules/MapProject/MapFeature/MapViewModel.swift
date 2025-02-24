@@ -2,23 +2,26 @@
 //  MapViewModel.swift
 //  MapFeature
 //
-//  Created by 심상갑 on 2/23/25.
+//  Created by Gab on 2/24/25.
 //
 
 import SwiftUI
-import MapInterface
+import Combine
 
-
-final class MapViewModel {
-    private var coordinator: MapFlowCoordinatorInterface
+final class MapViewModel: ObservableObject {
     
-    init(coordinator: MapFlowCoordinatorInterface) {
-        self.coordinator = coordinator
+    let mapViewModelCommunication: PassthroughSubject<Bool, Never> = .init()
+    
+    func openLikesYou() {
+        print("상갑 logEvent openLikesYou \(#function)")
+        mapViewModelCommunication.send(true)
     }
 }
 
-extension MapViewModel: MapOpenInterface {
-    func openLikesyouAction() {
-        self.coordinator.openLikesyouView()
+
+extension MapViewModel {
+    
+    func getMapViewModelCommunication() -> AnyPublisher<Bool, Never> {
+        return mapViewModelCommunication.eraseToAnyPublisher()
     }
 }

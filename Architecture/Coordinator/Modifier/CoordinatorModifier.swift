@@ -10,6 +10,7 @@ import MapFeature
 import LikesyouFeature
 import TestViewFeature
 import TestViewInterface
+import Domain
 
 struct CoordinatorModifier: ViewModifier {
     @EnvironmentObject private var coordinator: Coordinator
@@ -19,7 +20,8 @@ struct CoordinatorModifier: ViewModifier {
             .navigationDestination(for: Page.self) { page in
                 switch page {
                 case .map:
-                    MapFeatureView(coordinator: coordinator.mapViewCoordinatorInterface)
+                    MapFeatureView(presentor: self.getMapPresentor())
+//                    EmptyView()
                 case .likesyou:
                     LikesyouFeatureView()
                 case .test:
@@ -38,11 +40,21 @@ struct CoordinatorModifier: ViewModifier {
 }
 
 extension CoordinatorModifier {
+    func getMapPresentor() -> MapPresentor {
+        return MapPresentor(useCase: getUseCaseInterface(),
+                            coordinator: coordinator)
+    }
+    
+    func getUseCaseInterface() -> UseCaseInterface {
+        return UseCaseImplements()
+    }
+}
+
+extension CoordinatorModifier {
     func injectionTestViewOpenInterface() -> TestViewOpenInterface {
         let interactor: TestViewInteractor = .init(coordinator: coordinator)
         let sceneModel: TestViewOpenInterface = TestViewSceneModel(interactor: interactor)
         
         return sceneModel
     }
-    
 }

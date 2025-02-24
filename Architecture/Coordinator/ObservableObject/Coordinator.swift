@@ -73,6 +73,6 @@ extension Coordinator: TestviewFlowCoordinatorInteface {
 
 final class MapFlowCoordinator: MapFlowCoordinatorInterface {
     func openLikesyouView() {
-        print("MapFlowCoordinator \(#function)")
+        print("상갑 logEvent MapFlowCoordinator\(#function)")
     }
 }
