@@ -22,6 +22,12 @@
 		4B045CBB2D6A2CF1007A2C4C /* CoordinatorExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045CB92D6A2CF1007A2C4C /* CoordinatorExport.swift */; };
 		EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; };
 		EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFDBDFB22D7FF7C400277B84 /* MapFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF572D7FEEFB00277B84 /* MapFeature.framework */; };
+		EFDBDFB32D7FF7C400277B84 /* MapFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF572D7FEEFB00277B84 /* MapFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFDBDFB92D7FF96100277B84 /* TestViewFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF642D7FEEFB00277B84 /* TestViewFeature.framework */; };
+		EFDBDFBA2D7FF96100277B84 /* TestViewFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF642D7FEEFB00277B84 /* TestViewFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFDBDFBB2D7FF97100277B84 /* MyPageFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */; };
+		EFDBDFBC2D7FF97100277B84 /* MyPageFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,27 @@
 			remoteGlobalIDString = EFBD1F792D641083003426F4;
 			remoteInfo = Architecture;
 		};
+		EFDBDF562D7FEEFB00277B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B02A1D62D6B599B004895A8;
+			remoteInfo = MapFeature;
+		};
+		EFDBDF632D7FEEFB00277B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B02A0D22D6B1E49004895A8 /* TestProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B02A0DD2D6B1E65004895A8;
+			remoteInfo = TestViewFeature;
+		};
+		EFDBDFB02D7FF7C000277B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBDF3E2D7FEEFA00277B84 /* MyPageProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EFDBDF9C2D7FF79200277B84;
+			remoteInfo = MyPageFeature;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,8 +82,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EFDBDFBA2D7FF96100277B84 /* TestViewFeature.framework in Embed Frameworks */,
 				EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */,
 				4B02A28B2D6B633E004895A8 /* LikesyouFeature.framework in Embed Frameworks */,
+				EFDBDFBC2D7FF97100277B84 /* MyPageFeature.framework in Embed Frameworks */,
+				EFDBDFB32D7FF7C400277B84 /* MapFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +113,7 @@
 		EFBD1F7A2D641083003426F4 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBDF3E2D7FEEFA00277B84 /* MyPageProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyPageProject.xcodeproj; path = MyPageProject/MyPageProject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +121,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDBDFB92D7FF96100277B84 /* TestViewFeature.framework in Frameworks */,
 				EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */,
 				4B02A28A2D6B633E004895A8 /* LikesyouFeature.framework in Frameworks */,
+				EFDBDFBB2D7FF97100277B84 /* MyPageFeature.framework in Frameworks */,
+				EFDBDFB22D7FF7C400277B84 /* MapFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +149,7 @@
 		4B0459372D69D7E0007A2C4C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFDBDF3E2D7FEEFA00277B84 /* MyPageProject.xcodeproj */,
 				4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */,
 				4B02A24B2D6B627E004895A8 /* LikesyouProject.xcodeproj */,
 				4B02A0D22D6B1E49004895A8 /* TestProject.xcodeproj */,
@@ -239,6 +274,7 @@
 		EFB0E2C22D6C31B9002CB231 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				EFDBDF572D7FEEFB00277B84 /* MapFeature.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,6 +289,7 @@
 		EFB0E2C62D6C31B9002CB231 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				EFDBDF642D7FEEFB00277B84 /* TestViewFeature.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,6 +329,14 @@
 				EF40F91C2D6C29FC000C1DA1 /* Domain.xcodeproj */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		EFDBDF3F2D7FEEFA00277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +451,10 @@
 					ProjectRef = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
 				},
 				{
+					ProductGroup = EFDBDF3F2D7FEEFA00277B84 /* Products */;
+					ProjectRef = EFDBDF3E2D7FEEFA00277B84 /* MyPageProject.xcodeproj */;
+				},
+				{
 					ProductGroup = EFB0E2C62D6C31B9002CB231 /* Products */;
 					ProjectRef = 4B02A0D22D6B1E49004895A8 /* TestProject.xcodeproj */;
 				},
@@ -425,6 +474,27 @@
 			fileType = wrapper.framework;
 			path = Domain.framework;
 			remoteRef = EF40F9202D6C29FC000C1DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFDBDF572D7FEEFB00277B84 /* MapFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MapFeature.framework;
+			remoteRef = EFDBDF562D7FEEFB00277B84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFDBDF642D7FEEFB00277B84 /* TestViewFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TestViewFeature.framework;
+			remoteRef = EFDBDF632D7FEEFB00277B84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyPageFeature.framework;
+			remoteRef = EFDBDFB02D7FF7C000277B84 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

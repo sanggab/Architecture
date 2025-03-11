@@ -10,6 +10,7 @@ import MapFeature
 import LikesyouFeature
 import TestViewFeature
 import TestViewInterface
+import MyPageFeature
 import Domain
 
 struct CoordinatorModifier: ViewModifier {
@@ -26,6 +27,8 @@ struct CoordinatorModifier: ViewModifier {
                     LikesyouFeatureView()
                 case .test:
                     TestViewFeatureView(sceneModel: self.injectionTestViewOpenInterface())
+                case .mypage:
+                    MyPageView(presenter: getMyPagePresenter())
                 default:
                     EmptyView()
 //                case .likesyou:
@@ -56,5 +59,20 @@ extension CoordinatorModifier {
         let sceneModel: TestViewOpenInterface = TestViewSceneModel(interactor: interactor)
         
         return sceneModel
+    }
+}
+
+extension CoordinatorModifier {
+    func getMyPagePresenter() -> MyPagePresenter {
+        return MyPagePresenter(useCase: getMyPageUseCaseInterface(),
+                               coordinator: coordinator)
+    }
+    
+    func getMyPageViewModel() -> MyPageViewModel {
+        return MyPageViewModel()
+    }
+    
+    func getMyPageUseCaseInterface() -> MyPageUseCaseInterface {
+        return MyPageUseCaseImplements()
     }
 }

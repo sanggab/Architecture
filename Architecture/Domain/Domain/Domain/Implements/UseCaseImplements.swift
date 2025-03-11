@@ -16,3 +16,13 @@ public final class UseCaseImplements: UseCaseInterface {
         return .random()
     }
 }
+
+public final class MyPageUseCaseImplements: MyPageUseCaseInterface {
+    
+    public init() { }
+    
+    public func openLikesYouUseCaseInterface() async throws -> Bool {
+        print("상갑 logEvent MyPageUseCaseImplements \(#function)")
+        return .random()
+    }
+}

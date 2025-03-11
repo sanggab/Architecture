@@ -10,3 +10,7 @@ import Foundation
 public protocol UseCaseInterface {
     func openLikesYouUseCaseInterface() async throws -> Bool
 }
+
+public protocol MyPageUseCaseInterface {
+    func openLikesYouUseCaseInterface() async throws -> Bool
+}

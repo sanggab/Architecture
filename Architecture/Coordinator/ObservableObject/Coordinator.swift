@@ -8,12 +8,14 @@
 import SwiftUI
 import MapInterface
 import TestViewInterface
+import MyPageInterface
 
 enum Page: Equatable {
     case map
     case likesyou
     case messageList
     case message
+    case mypage
     case test
 }
 
@@ -60,7 +62,8 @@ final class Coordinator: CoordinatorFlowFeatures {
 
 extension Coordinator: MapFlowCoordinatorInterface {
     func openLikesyouView() {
-        self.navigationViews.append(.likesyou)
+//        self.navigationViews.append(.likesyou)
+        self.navigationViews.append(.mypage)
     }
 }
 
@@ -68,6 +71,13 @@ extension Coordinator: TestviewFlowCoordinatorInteface {
     func removeAllNavigationViews() {
         print(#function)
         self.navigationViews.removeAll()
+    }
+}
+
+extension Coordinator: MyPageCoordinatorInteface {
+    func openLikesyouViewOfMypage() {
+        print("상갑 logEvent \(#function)")
+        self.navigationViews.append(.likesyou)
     }
 }
 
