@@ -14,7 +14,7 @@ public struct MyPageView: View {
     @StateObject private var viewModel: MyPageViewModel = .init()
     
     public init(presenter: MyPagePresenter) {
-        print("상갑 logEvent MyPageView \(#function)")
+        print("상갑 logEvent MyPageView presenter\(#function)")
         self.presenter = presenter
     }
     
@@ -27,6 +27,7 @@ public struct MyPageView: View {
                 presenter.changeText()
             }
             .task {
+                print("상갑 logEvent \(#function)")
                 presenter.bind(to: viewModel)
             }
             .environmentObject(viewModel)
