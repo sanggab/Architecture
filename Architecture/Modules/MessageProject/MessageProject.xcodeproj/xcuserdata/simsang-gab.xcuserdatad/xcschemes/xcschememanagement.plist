@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Architecture.xcscheme_^#shared#^_</key>
+		<key>MessageFeature.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>12</integer>
 		</dict>
-		<key>LikesyouInterface.xcscheme_^#shared#^_</key>
+		<key>MessageInterface.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>9</integer>
 		</dict>
-		<key>MapViewInterFeature.xcscheme_^#shared#^_</key>
+		<key>MessageProject.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>15</integer>
 		</dict>
 	</dict>
 </dict>
