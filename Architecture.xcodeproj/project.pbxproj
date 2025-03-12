@@ -114,6 +114,8 @@
 		EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F942D641086003426F4 /* ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBDF3E2D7FEEFA00277B84 /* MyPageProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyPageProject.xcodeproj; path = MyPageProject/MyPageProject.xcodeproj; sourceTree = "<group>"; };
+		EFDBDFD72D802EB300277B84 /* MessageProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MessageProject.xcodeproj; path = MessageProject/MessageProject.xcodeproj; sourceTree = "<group>"; };
+		EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVVMProject.xcodeproj; path = MVVMProject/MVVMProject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,8 @@
 		4B0459372D69D7E0007A2C4C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */,
+				EFDBDFD72D802EB300277B84 /* MessageProject.xcodeproj */,
 				EFDBDF3E2D7FEEFA00277B84 /* MyPageProject.xcodeproj */,
 				4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */,
 				4B02A24B2D6B627E004895A8 /* LikesyouProject.xcodeproj */,
@@ -339,6 +343,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EFDBDFD82D802EB300277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDBE02E2D814CC300277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,6 +467,14 @@
 				{
 					ProductGroup = EFB0E2C22D6C31B9002CB231 /* Products */;
 					ProjectRef = 4B02A1CB2D6B598B004895A8 /* MapProject.xcodeproj */;
+				},
+				{
+					ProductGroup = EFDBDFD82D802EB300277B84 /* Products */;
+					ProjectRef = EFDBDFD72D802EB300277B84 /* MessageProject.xcodeproj */;
+				},
+				{
+					ProductGroup = EFDBE02E2D814CC300277B84 /* Products */;
+					ProjectRef = EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */;
 				},
 				{
 					ProductGroup = EFDBDF3F2D7FEEFA00277B84 /* Products */;

@@ -93,13 +93,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		4B02A0E72D6B1E65004895A8 /* Exceptions for "TestViewFeature" folder in "TestViewFeature" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				TestViewFeature.h,
-			);
-			target = 4B02A0DC2D6B1E65004895A8 /* TestViewFeature */;
-		};
 		4B02A0FB2D6B1E6D004895A8 /* Exceptions for "TestViewUI" folder in "TestViewUI" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
@@ -124,9 +117,6 @@
 		};
 		4B02A0DE2D6B1E65004895A8 /* TestViewFeature */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				4B02A0E72D6B1E65004895A8 /* Exceptions for "TestViewFeature" folder in "TestViewFeature" target */,
-			);
 			path = TestViewFeature;
 			sourceTree = "<group>";
 		};
