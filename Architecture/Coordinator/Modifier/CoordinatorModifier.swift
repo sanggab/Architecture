@@ -22,7 +22,6 @@ struct CoordinatorModifier: ViewModifier {
                 switch page {
                 case .map:
                     MapFeatureView(presentor: self.getMapPresentor())
-//                    EmptyView()
                 case .likesyou:
                     LikesyouFeatureView()
                 case .test:
@@ -31,12 +30,6 @@ struct CoordinatorModifier: ViewModifier {
                     MyPageView(presenter: getMyPagePresenter())
                 default:
                     EmptyView()
-//                case .likesyou:
-//                    
-//                case .messageList:
-//                    
-//                case .message:
-//
                 }
             }
     }
