@@ -22,7 +22,7 @@ public struct MVIParentView: View {
         Text("MVIParentView 나이 : \(store(\.age))")
         
         Button {
-            let binding = Binding {
+            let binding: Binding<Int> = .init {
                 return self.store(\.age)
             } set: { value in
                 self.store.action(.age(value))

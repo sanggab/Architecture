@@ -120,9 +120,12 @@
 		EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVVMProject.xcodeproj; path = MVVMProject/MVVMProject.xcodeproj; sourceTree = "<group>"; };
 		EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVIProject.xcodeproj; path = MVIProject/MVIProject.xcodeproj; sourceTree = "<group>"; };
 		EFDBE08C2D82A79300277B84 /* MVILowerProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVILowerProject.xcodeproj; path = MVILowerProject/MVILowerProject.xcodeproj; sourceTree = "<group>"; };
-		EFDBE0E82D83A38100277B84 /* MVIService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVIService.xcodeproj; path = MVIService/MVIService.xcodeproj; sourceTree = "<group>"; };
 		EFDBE1412D83B0C400277B84 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		EFDBE1432D83E38A00277B84 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		EFDBE17F2D83F38400277B84 /* ProfileEditProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProfileEditProject.xcodeproj; path = ProfileEditProject/ProfileEditProject.xcodeproj; sourceTree = "<group>"; };
+		EFDBE1FF2D83F43F00277B84 /* StoreFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StoreFramework.xcodeproj; path = StoreFramework/StoreFramework.xcodeproj; sourceTree = "<group>"; };
+		EFDBE24C2D83F54100277B84 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
+		EFDBE2902D83FD7700277B84 /* ProfileDetailProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProfileDetailProject.xcodeproj; path = ProfileDetailProject/ProfileDetailProject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +161,9 @@
 		4B0459372D69D7E0007A2C4C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EFDBE0E82D83A38100277B84 /* MVIService.xcodeproj */,
+				EFDBE2902D83FD7700277B84 /* ProfileDetailProject.xcodeproj */,
+				EFDBE1FF2D83F43F00277B84 /* StoreFramework.xcodeproj */,
+				EFDBE17F2D83F38400277B84 /* ProfileEditProject.xcodeproj */,
 				EFDBE08C2D82A79300277B84 /* MVILowerProject.xcodeproj */,
 				EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */,
 				EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */,
@@ -241,6 +246,7 @@
 		4B045B662D69DD39007A2C4C /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				EFDBE2362D83F52900277B84 /* Core */,
 				EFC69C2B2D6C29930055235F /* Domain */,
 				EFDBE1402D83B0BA00277B84 /* DI */,
 				4B045B5B2D69DD39007A2C4C /* Coordinator */,
@@ -382,13 +388,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFDBE0E92D83A38100277B84 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EFDBE1402D83B0BA00277B84 /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +395,42 @@
 				EFDBE1432D83E38A00277B84 /* Test.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		EFDBE1802D83F38400277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDBE2002D83F43F00277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDBE2362D83F52900277B84 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBE24C2D83F54100277B84 /* Core.xcodeproj */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EFDBE24D2D83F54100277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDBE2912D83FD7700277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,10 +528,16 @@
 			);
 			mainGroup = EFBD1F712D641083003426F4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EFBD1F7B2D641083003426F4 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = EFDBE24D2D83F54100277B84 /* Products */;
+					ProjectRef = EFDBE24C2D83F54100277B84 /* Core.xcodeproj */;
+				},
 				{
 					ProductGroup = EF40F91D2D6C29FC000C1DA1 /* Products */;
 					ProjectRef = EF40F91C2D6C29FC000C1DA1 /* Domain.xcodeproj */;
@@ -522,16 +563,24 @@
 					ProjectRef = EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */;
 				},
 				{
-					ProductGroup = EFDBE0E92D83A38100277B84 /* Products */;
-					ProjectRef = EFDBE0E82D83A38100277B84 /* MVIService.xcodeproj */;
-				},
-				{
 					ProductGroup = EFDBE02E2D814CC300277B84 /* Products */;
 					ProjectRef = EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */;
 				},
 				{
 					ProductGroup = EFDBDF3F2D7FEEFA00277B84 /* Products */;
 					ProjectRef = EFDBDF3E2D7FEEFA00277B84 /* MyPageProject.xcodeproj */;
+				},
+				{
+					ProductGroup = EFDBE2912D83FD7700277B84 /* Products */;
+					ProjectRef = EFDBE2902D83FD7700277B84 /* ProfileDetailProject.xcodeproj */;
+				},
+				{
+					ProductGroup = EFDBE1802D83F38400277B84 /* Products */;
+					ProjectRef = EFDBE17F2D83F38400277B84 /* ProfileEditProject.xcodeproj */;
+				},
+				{
+					ProductGroup = EFDBE2002D83F43F00277B84 /* Products */;
+					ProjectRef = EFDBE1FF2D83F43F00277B84 /* StoreFramework.xcodeproj */;
 				},
 				{
 					ProductGroup = EFB0E2C62D6C31B9002CB231 /* Products */;
