@@ -29,6 +29,7 @@
 		EFDBDFBB2D7FF97100277B84 /* MyPageFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */; };
 		EFDBDFBC2D7FF97100277B84 /* MyPageFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBE1422D83B0C400277B84 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE1412D83B0C400277B84 /* DIContainer.swift */; };
+		EFDBE1442D83E38A00277B84 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE1432D83E38A00277B84 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		EFDBE08C2D82A79300277B84 /* MVILowerProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVILowerProject.xcodeproj; path = MVILowerProject/MVILowerProject.xcodeproj; sourceTree = "<group>"; };
 		EFDBE0E82D83A38100277B84 /* MVIService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVIService.xcodeproj; path = MVIService/MVIService.xcodeproj; sourceTree = "<group>"; };
 		EFDBE1412D83B0C400277B84 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		EFDBE1432D83E38A00277B84 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				EFDBE1412D83B0C400277B84 /* DIContainer.swift */,
+				EFDBE1432D83E38A00277B84 /* Test.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				4B045B6A2D69DD39007A2C4C /* Coordinator.swift in Sources */,
 				4B045B6B2D69DD39007A2C4C /* ContentView.swift in Sources */,
 				4B045B6C2D69DD39007A2C4C /* ArchitectureApp.swift in Sources */,
+				EFDBE1442D83E38A00277B84 /* Test.swift in Sources */,
 				4B045CBB2D6A2CF1007A2C4C /* CoordinatorExport.swift in Sources */,
 				4B045B6D2D69DD39007A2C4C /* Architecture.docc in Sources */,
 			);

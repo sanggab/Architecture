@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import MVILowerFeature
 
 @main
 struct MVILowerProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MVILowerView(ageState: .constant(5))
         }
     }
 }

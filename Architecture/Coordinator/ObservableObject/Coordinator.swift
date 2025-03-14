@@ -14,7 +14,31 @@ import MyPageInterface
 import MVIInterface
 import MVILowerInterface
 
-enum Page: Equatable {
+enum Page: Hashable {
+//    static func == (lhs: Page, rhs: Page) -> Bool {
+//        switch (lhs, rhs) {
+//        case (.map, .map):
+//            return true
+//        case (.likesyou, .likesyou):
+//            return true
+//        case (.messageList, .messageList):
+//            return true
+//        case (.message, .message):
+//            return true
+//        case (.mypage, .mypage):
+//            return true
+//        case (.test, .test):
+//            return true
+//        case (.mviproject, .mviproject):
+//            return true
+//        case (.mvilowerproject(_, let test1), .mvilowerproject(_, let test2)):
+//            
+//            return test1 == test2
+//        default:
+//            return true
+//        }
+//    }
+//    
     case map
     case likesyou
     case messageList
@@ -22,8 +46,10 @@ enum Page: Equatable {
     case mypage
     case test
     case mviproject
-    case mvilowerproject
+    case mvilowerproject(item: MVIProjectPageItem)
 }
+
+
 
 protocol CoordinatorFlowFeatures: ObservableObject {
     func push(page: Page)
@@ -94,6 +120,12 @@ extension Coordinator: MyPageCoordinatorInteface {
     func openLikesyouViewOfMypage() {
         print("상갑 logEvent \(#function)")
         self.navigationViews.append(.likesyou)
+    }
+}
+
+extension Coordinator: MVICoordinatorInteface {
+    func openMVILower(ageState: Binding<Int>) {
+        self.navigationViews.append(.mvilowerproject(item: .init(state: ageState)))
     }
 }
 

@@ -21,25 +21,24 @@ struct CoordinatorModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            
-//            .navigationDestination(for: Page.self) { page in
-//                switch page {
-//                case .map:
-//                    MapFeatureView(presentor: self.getMapPresentor())
-//                case .likesyou:
-//                    LikesyouFeatureView()
-//                case .test:
-//                    TestViewFeatureView(sceneModel: self.injectionTestViewOpenInterface())
-//                case .mypage:
-//                    MyPageView(presenter: getMyPagePresenter())
-////                case .mviproject:
-////                    MVIParentView()
-////                case .mvilowerproject:
-////                    MVILowerView(interface: coordinator)
-//                default:
-//                    EmptyView()
-//                }
-//            }
+            .navigationDestination(for: Page.self) { page in
+                switch page {
+                case .map:
+                    MapFeatureView(presentor: self.getMapPresentor())
+                case .likesyou:
+                    LikesyouFeatureView()
+                case .test:
+                    TestViewFeatureView(sceneModel: self.injectionTestViewOpenInterface())
+                case .mypage:
+                    MyPageView(presenter: getMyPagePresenter())
+                case .mviproject:
+                    MVIParentView(coordinator: coordinator)
+                case .mvilowerproject(let item):
+                    MVILowerView(ageState: item.state)
+                default:
+                    EmptyView()
+                }
+            }
     }
 }
 

@@ -10,10 +10,10 @@ import MVILowerInterface
 
 public struct MVILowerView: View {
     
-    private var interface: MVILowerOutputInterface
+    @Binding private var ageState: Int
     
-    public init(interface: MVILowerOutputInterface) {
-        self.interface = interface
+    public init(ageState: Binding<Int>) {
+        self._ageState = ageState
     }
     
     public var body: some View {
@@ -21,7 +21,7 @@ public struct MVILowerView: View {
         
         Button {
             let age: Int = (1...100).randomElement() ?? .zero
-            interface.getAge(age: age)
+            self.ageState = age
         } label: {
             Text("랜덤 나이 발사한다")
         }

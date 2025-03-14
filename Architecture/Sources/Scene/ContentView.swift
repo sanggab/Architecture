@@ -11,7 +11,7 @@ struct ContentView: View {
     @StateObject private var coordinator: Coordinator = .init()
     
     var body: some View {
-        NavigationStack(path: coordinator.navigationPathBinding2) {
+        NavigationStack(path: coordinator.navigationPathBinding) {
             
             VStack(spacing: 0) {
                 HStack(spacing: 0) {
@@ -40,6 +40,15 @@ struct ContentView: View {
                         }
                         .onTapGesture {
                             coordinator.push(page: .test)
+                        }
+                    
+                    Rectangle()
+                        .fill(.orange)
+                        .overlay {
+                            Text("MVIProject 뷰 푸시")
+                        }
+                        .onTapGesture {
+                            coordinator.push(page: .mviproject)
                         }
                 }
                 .frame(height: 50)

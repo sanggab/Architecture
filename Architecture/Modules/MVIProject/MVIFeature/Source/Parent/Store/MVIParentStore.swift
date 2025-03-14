@@ -48,6 +48,7 @@ final class MVIParentStore: ViewModelFeatures {
         case .wash:
             print("상갑 logEvent \(#function) wash")
         case .age(let age):
+            print("상갑 logEvent \(#function) MVIParentStore: \(age)")
             self.update(\.age, newValue: age)
         case .child(let childAction):
             switch childAction {
@@ -57,13 +58,6 @@ final class MVIParentStore: ViewModelFeatures {
                 print("상갑 logEvent \(#function) eat")
             }
         }
-    }
-}
-
-extension MVIParentStore: MVILowerOutputInterface {
-    func getAge(age: Int) {
-        print("상갑 logEvent \(#function) age: \(age)")
-        self.action(.age(age))
     }
 }
 

@@ -15,7 +15,7 @@ protocol MVIStoreAction: Equatable {
 }
 
 public protocol MVICoordinatorInteface {
-    func openMVILower(publisher: MVILowerOutputInterface)
+    func openMVILower(ageState: Binding<Int>)
 }
 
 public protocol ViewModelFeatures: ObservableObject {
@@ -25,4 +25,23 @@ public protocol ViewModelFeatures: ObservableObject {
     func callAsFunction<V: Equatable>(_ keyPath: KeyPath<State, V>) -> V
     
     func action(_ action: Action)
+}
+
+public struct MVIProjectPageItem: Identifiable, Hashable {
+    public static func == (lhs: MVIProjectPageItem, rhs: MVIProjectPageItem) -> Bool {
+        lhs.id == rhs.id &&
+        lhs.state.wrappedValue == rhs.state.wrappedValue
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(state.wrappedValue)
+    }
+    
+    public let id = UUID()
+    public let state: Binding<Int>
+    
+    public init(state: Binding<Int>) {
+        self.state = state
+    }
 }
