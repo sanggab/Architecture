@@ -28,6 +28,7 @@
 		EFDBDFBA2D7FF96100277B84 /* TestViewFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF642D7FEEFB00277B84 /* TestViewFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBDFBB2D7FF97100277B84 /* MyPageFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */; };
 		EFDBDFBC2D7FF97100277B84 /* MyPageFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDFB12D7FF7C000277B84 /* MyPageFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFDBE1422D83B0C400277B84 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE1412D83B0C400277B84 /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVVMProject.xcodeproj; path = MVVMProject/MVVMProject.xcodeproj; sourceTree = "<group>"; };
 		EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVIProject.xcodeproj; path = MVIProject/MVIProject.xcodeproj; sourceTree = "<group>"; };
 		EFDBE08C2D82A79300277B84 /* MVILowerProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVILowerProject.xcodeproj; path = MVILowerProject/MVILowerProject.xcodeproj; sourceTree = "<group>"; };
+		EFDBE0E82D83A38100277B84 /* MVIService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVIService.xcodeproj; path = MVIService/MVIService.xcodeproj; sourceTree = "<group>"; };
+		EFDBE1412D83B0C400277B84 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,7 @@
 		4B0459372D69D7E0007A2C4C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFDBE0E82D83A38100277B84 /* MVIService.xcodeproj */,
 				EFDBE08C2D82A79300277B84 /* MVILowerProject.xcodeproj */,
 				EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */,
 				EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */,
@@ -236,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC69C2B2D6C29930055235F /* Domain */,
+				EFDBE1402D83B0BA00277B84 /* DI */,
 				4B045B5B2D69DD39007A2C4C /* Coordinator */,
 				4B045B5E2D69DD39007A2C4C /* Sources */,
 				4B045B622D69DD39007A2C4C /* Utils */,
@@ -375,6 +380,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EFDBE0E92D83A38100277B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDBE1402D83B0BA00277B84 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBE1412D83B0C400277B84 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -499,6 +519,10 @@
 					ProjectRef = EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */;
 				},
 				{
+					ProductGroup = EFDBE0E92D83A38100277B84 /* Products */;
+					ProjectRef = EFDBE0E82D83A38100277B84 /* MVIService.xcodeproj */;
+				},
+				{
 					ProductGroup = EFDBE02E2D814CC300277B84 /* Products */;
 					ProjectRef = EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */;
 				},
@@ -582,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDBE1422D83B0C400277B84 /* DIContainer.swift in Sources */,
 				4B045B692D69DD39007A2C4C /* CoordinatorModifier.swift in Sources */,
 				4B045B6A2D69DD39007A2C4C /* Coordinator.swift in Sources */,
 				4B045B6B2D69DD39007A2C4C /* ContentView.swift in Sources */,

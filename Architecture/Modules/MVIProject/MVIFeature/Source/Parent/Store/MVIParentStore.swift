@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MVIInterface
 import MVILowerInterface
 
 final class MVIParentStore: ViewModelFeatures {

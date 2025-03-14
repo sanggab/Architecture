@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import Combine
+
 import MapInterface
 import TestViewInterface
 import MyPageInterface
+import MVIInterface
+import MVILowerInterface
 
 enum Page: Equatable {
     case map
@@ -17,6 +21,8 @@ enum Page: Equatable {
     case message
     case mypage
     case test
+    case mviproject
+    case mvilowerproject
 }
 
 protocol CoordinatorFlowFeatures: ObservableObject {
@@ -29,7 +35,8 @@ protocol CoordinatorFlowFeatures: ObservableObject {
 
 final class Coordinator: CoordinatorFlowFeatures {
     @Published private var navigationViews: [Page] = []
-    
+    @Published private var navigationPath: NavigationPath = .init()
+
     var mapViewCoordinatorInterface: MapFlowCoordinatorInterface = MapFlowCoordinator()
     
     init() {
@@ -42,6 +49,15 @@ final class Coordinator: CoordinatorFlowFeatures {
         } set: { newValue in
             self.navigationViews =  newValue
         }
+    }
+    
+    var navigationPathBinding2: Binding<NavigationPath> {
+        Binding {
+            return self.navigationPath
+        } set: { newValue in
+            self.navigationPath = newValue
+        }
+
     }
     
     func push(page: Page) {
@@ -80,6 +96,12 @@ extension Coordinator: MyPageCoordinatorInteface {
         self.navigationViews.append(.likesyou)
     }
 }
+
+//extension Coordinator: MVICoordinatorInteface {
+//    func openMVILower(publisher: any MVILowerOutputInterface) {
+//        self.navigationPath.append(publisher)
+//    }
+//}
 
 final class MapFlowCoordinator: MapFlowCoordinatorInterface {
     func openLikesyouView() {

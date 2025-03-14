@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import Combine
+import MVILowerInterface
 
 protocol MVIStoreAction: Equatable {
     associatedtype ViewAction
     associatedtype UpdateAction
 }
 
-protocol ViewModelFeatures: ObservableObject {
+public protocol MVICoordinatorInteface {
+    func openMVILower(publisher: MVILowerOutputInterface)
+}
+
+public protocol ViewModelFeatures: ObservableObject {
     associatedtype State: Equatable
     associatedtype Action: Equatable
     

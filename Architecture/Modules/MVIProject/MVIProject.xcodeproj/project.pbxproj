@@ -9,7 +9,37 @@
 /* Begin PBXBuildFile section */
 		EFDBE0C92D82AC9000277B84 /* MVILowerFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE0C72D82AC9000277B84 /* MVILowerFeature.framework */; };
 		EFDBE0CA2D82AC9000277B84 /* MVILowerFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE0C72D82AC9000277B84 /* MVILowerFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFDBE1072D83A3EE00277B84 /* MVIInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE1012D83A3EE00277B84 /* MVIInterface.framework */; };
+		EFDBE1082D83A3EE00277B84 /* MVIInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE1012D83A3EE00277B84 /* MVIInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFDBE1182D83A3FB00277B84 /* MVIFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE1122D83A3FB00277B84 /* MVIFeature.framework */; };
+		EFDBE1192D83A3FB00277B84 /* MVIFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE1122D83A3FB00277B84 /* MVIFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFDBE11E2D83A40100277B84 /* MVIInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE1012D83A3EE00277B84 /* MVIInterface.framework */; };
+		EFDBE11F2D83A40100277B84 /* MVIInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE1012D83A3EE00277B84 /* MVIInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFDBE1052D83A3EE00277B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE0372D82567900277B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDBE1002D83A3EE00277B84;
+			remoteInfo = MVIInterface;
+		};
+		EFDBE1162D83A3FB00277B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE0372D82567900277B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDBE1112D83A3FB00277B84;
+			remoteInfo = MVIFeature;
+		};
+		EFDBE1202D83A40100277B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE0372D82567900277B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDBE1002D83A3EE00277B84;
+			remoteInfo = MVIInterface;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EFDBE0CD2D82AC9000277B84 /* Embed Frameworks */ = {
@@ -18,7 +48,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EFDBE1192D83A3FB00277B84 /* MVIFeature.framework in Embed Frameworks */,
 				EFDBE0CA2D82AC9000277B84 /* MVILowerFeature.framework in Embed Frameworks */,
+				EFDBE1082D83A3EE00277B84 /* MVIInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE1222D83A40100277B84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFDBE11F2D83A40100277B84 /* MVIInterface.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,12 +72,53 @@
 		EFDBE03F2D82567900277B84 /* MVIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE0C72D82AC9000277B84 /* MVILowerFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MVILowerFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE0C82D82AC9000277B84 /* MVILowerInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MVILowerInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBE1012D83A3EE00277B84 /* MVIInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVIInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBE1122D83A3FB00277B84 /* MVIFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVIFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBE1342D83A70200277B84 /* MVILowerInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MVILowerInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EFDBE1232D83A40F00277B84 /* Exceptions for "MVIFeature" folder in "MVIProject" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Source/Child/Model/MVIChildModel.swift,
+				Source/Child/Store/MVIChildStore.swift,
+				Source/Child/View/MVIChildView.swift,
+				Source/Parent/Model/MVIParentModel.swift,
+				Source/Parent/Store/MVIParentStore.swift,
+				Source/Parent/View/MVIParentView.swift,
+			);
+			target = EFDBE03E2D82567900277B84 /* MVIProject */;
+		};
+		EFDBE1242D83A41500277B84 /* Exceptions for "MVIInterface" folder in "MVIProject" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Interface/MVIInterface.swift,
+			);
+			target = EFDBE03E2D82567900277B84 /* MVIProject */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EFDBE0412D82567900277B84 /* MVIProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MVIProject;
+			sourceTree = "<group>";
+		};
+		EFDBE1022D83A3EE00277B84 /* MVIInterface */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EFDBE1242D83A41500277B84 /* Exceptions for "MVIInterface" folder in "MVIProject" target */,
+			);
+			path = MVIInterface;
+			sourceTree = "<group>";
+		};
+		EFDBE1132D83A3FB00277B84 /* MVIFeature */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EFDBE1232D83A40F00277B84 /* Exceptions for "MVIFeature" folder in "MVIProject" target */,
+			);
+			path = MVIFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -44,7 +128,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDBE1182D83A3FB00277B84 /* MVIFeature.framework in Frameworks */,
 				EFDBE0C92D82AC9000277B84 /* MVILowerFeature.framework in Frameworks */,
+				EFDBE1072D83A3EE00277B84 /* MVIInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE0FE2D83A3EE00277B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE10F2D83A3FB00277B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDBE11E2D83A40100277B84 /* MVIInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				EFDBE0412D82567900277B84 /* MVIProject */,
+				EFDBE1022D83A3EE00277B84 /* MVIInterface */,
+				EFDBE1132D83A3FB00277B84 /* MVIFeature */,
 				EFDBE0C62D82AC9000277B84 /* Frameworks */,
 				EFDBE0402D82567900277B84 /* Products */,
 			);
@@ -64,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				EFDBE03F2D82567900277B84 /* MVIProject.app */,
+				EFDBE1012D83A3EE00277B84 /* MVIInterface.framework */,
+				EFDBE1122D83A3FB00277B84 /* MVIFeature.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +176,7 @@
 		EFDBE0C62D82AC9000277B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFDBE1342D83A70200277B84 /* MVILowerInterface.framework */,
 				EFDBE0C72D82AC9000277B84 /* MVILowerFeature.framework */,
 				EFDBE0C82D82AC9000277B84 /* MVILowerInterface.framework */,
 			);
@@ -78,6 +184,23 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EFDBE0FC2D83A3EE00277B84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE10D2D83A3FB00277B84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EFDBE03E2D82567900277B84 /* MVIProject */ = {
@@ -92,6 +215,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				EFDBE1062D83A3EE00277B84 /* PBXTargetDependency */,
+				EFDBE1172D83A3FB00277B84 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				EFDBE0412D82567900277B84 /* MVIProject */,
@@ -102,6 +227,54 @@
 			productName = MVIProject;
 			productReference = EFDBE03F2D82567900277B84 /* MVIProject.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EFDBE1002D83A3EE00277B84 /* MVIInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDBE10A2D83A3EE00277B84 /* Build configuration list for PBXNativeTarget "MVIInterface" */;
+			buildPhases = (
+				EFDBE0FC2D83A3EE00277B84 /* Headers */,
+				EFDBE0FD2D83A3EE00277B84 /* Sources */,
+				EFDBE0FE2D83A3EE00277B84 /* Frameworks */,
+				EFDBE0FF2D83A3EE00277B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EFDBE1022D83A3EE00277B84 /* MVIInterface */,
+			);
+			name = MVIInterface;
+			packageProductDependencies = (
+			);
+			productName = MVIInterface;
+			productReference = EFDBE1012D83A3EE00277B84 /* MVIInterface.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFDBE1112D83A3FB00277B84 /* MVIFeature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDBE11B2D83A3FB00277B84 /* Build configuration list for PBXNativeTarget "MVIFeature" */;
+			buildPhases = (
+				EFDBE10D2D83A3FB00277B84 /* Headers */,
+				EFDBE10E2D83A3FB00277B84 /* Sources */,
+				EFDBE10F2D83A3FB00277B84 /* Frameworks */,
+				EFDBE1102D83A3FB00277B84 /* Resources */,
+				EFDBE1222D83A40100277B84 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFDBE1212D83A40100277B84 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EFDBE1132D83A3FB00277B84 /* MVIFeature */,
+			);
+			name = MVIFeature;
+			packageProductDependencies = (
+			);
+			productName = MVIFeature;
+			productReference = EFDBE1122D83A3FB00277B84 /* MVIFeature.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -114,6 +287,12 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					EFDBE03E2D82567900277B84 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					EFDBE1002D83A3EE00277B84 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					EFDBE1112D83A3FB00277B84 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -133,12 +312,28 @@
 			projectRoot = "";
 			targets = (
 				EFDBE03E2D82567900277B84 /* MVIProject */,
+				EFDBE1002D83A3EE00277B84 /* MVIInterface */,
+				EFDBE1112D83A3FB00277B84 /* MVIFeature */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFDBE03D2D82567900277B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE0FF2D83A3EE00277B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE1102D83A3FB00277B84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,7 +350,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFDBE0FD2D83A3EE00277B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE10E2D83A3FB00277B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFDBE1062D83A3EE00277B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDBE1002D83A3EE00277B84 /* MVIInterface */;
+			targetProxy = EFDBE1052D83A3EE00277B84 /* PBXContainerItemProxy */;
+		};
+		EFDBE1172D83A3FB00277B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDBE1112D83A3FB00277B84 /* MVIFeature */;
+			targetProxy = EFDBE1162D83A3FB00277B84 /* PBXContainerItemProxy */;
+		};
+		EFDBE1212D83A40100277B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDBE1002D83A3EE00277B84 /* MVIInterface */;
+			targetProxy = EFDBE1202D83A40100277B84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EFDBE04B2D82567B00277B84 /* Debug */ = {
@@ -335,6 +562,146 @@
 			};
 			name = Release;
 		};
+		EFDBE10B2D83A3EE00277B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z93APRK365;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.MVIInterface;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFDBE10C2D83A3EE00277B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z93APRK365;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.MVIInterface;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFDBE11C2D83A3FB00277B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z93APRK365;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.MVIFeature;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFDBE11D2D83A3FB00277B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z93APRK365;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.MVIFeature;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -352,6 +719,24 @@
 			buildConfigurations = (
 				EFDBE04E2D82567B00277B84 /* Debug */,
 				EFDBE04F2D82567B00277B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDBE10A2D83A3EE00277B84 /* Build configuration list for PBXNativeTarget "MVIInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDBE10B2D83A3EE00277B84 /* Debug */,
+				EFDBE10C2D83A3EE00277B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDBE11B2D83A3FB00277B84 /* Build configuration list for PBXNativeTarget "MVIFeature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDBE11C2D83A3FB00277B84 /* Debug */,
+				EFDBE11D2D83A3FB00277B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
