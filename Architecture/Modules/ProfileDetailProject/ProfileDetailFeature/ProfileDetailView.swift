@@ -7,9 +7,16 @@
 
 import SwiftUI
 import Kingfisher
+import ProfileDetailInterface
 
 public struct ProfileDetailView: View {
     @StateObject private var store: ProfileDetailStore = .init()
+    
+    private let coordinator: ProfileDetailCoordinatorInteface
+    
+    public init(coordinator: ProfileDetailCoordinatorInteface) {
+        self.coordinator = coordinator
+    }
     
     public var body: some View {
         Text("ProfileDetailView")
@@ -25,7 +32,7 @@ public struct ProfileDetailView: View {
         
         
         Button {
-            
+            coordinator.openProfileEdit()
         } label: {
             Text("ProfileEdit으로 이동해라")
         }
@@ -33,6 +40,6 @@ public struct ProfileDetailView: View {
     }
 }
 
-#Preview {
-    ProfileDetailView()
-}
+//#Preview {
+//    ProfileDetailView()
+//}
