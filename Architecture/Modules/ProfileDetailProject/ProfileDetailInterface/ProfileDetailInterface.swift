@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
+import ProfileEditInterface
 
 public protocol ProfileDetailCoordinatorInteface {
-    func openProfileEdit()
+    func openProfileEdit(interface: any ProfileEditOutputInterface)
 }

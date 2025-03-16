@@ -13,6 +13,8 @@ import TestViewInterface
 import MyPageInterface
 import MVIInterface
 import MVILowerInterface
+import ProfileDetailInterface
+import ProfileEditInterface
 
 enum Page: Hashable {
 //    static func == (lhs: Page, rhs: Page) -> Bool {
@@ -47,6 +49,8 @@ enum Page: Hashable {
     case test
     case mviproject
     case mvilowerproject(item: MVIProjectPageItem)
+    case profileDetail
+    case profileEdit(item: ProfileEditOutputModel)
 }
 
 
@@ -129,11 +133,12 @@ extension Coordinator: MVICoordinatorInteface {
     }
 }
 
-//extension Coordinator: MVICoordinatorInteface {
-//    func openMVILower(publisher: any MVILowerOutputInterface) {
-//        self.navigationPath.append(publisher)
-//    }
-//}
+extension Coordinator: ProfileDetailCoordinatorInteface {
+    func openProfileEdit(interface: any ProfileEditOutputInterface) {
+        let item: ProfileEditOutputModel = .init(id: UUID().uuidString, interface: interface)
+        self.navigationViews.append(.profileEdit(item: item))
+    }
+}
 
 final class MapFlowCoordinator: MapFlowCoordinatorInterface {
     func openLikesyouView() {

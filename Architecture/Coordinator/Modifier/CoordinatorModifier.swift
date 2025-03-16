@@ -14,6 +14,8 @@ import MyPageFeature
 import MVIFeature
 import MVILowerFeature
 import MVILowerInterface
+import ProfileDetailFeature
+import ProfileEditFeature
 import Domain
 
 struct CoordinatorModifier: ViewModifier {
@@ -35,6 +37,10 @@ struct CoordinatorModifier: ViewModifier {
                     MVIParentView(coordinator: coordinator)
                 case .mvilowerproject(let item):
                     MVILowerView(ageState: item.state)
+                case .profileDetail:
+                    ProfileDetailView(coordinator: coordinator)
+                case .profileEdit(let item):
+                    ProfileEditView(interface: item.interface)
                 default:
                     EmptyView()
                 }

@@ -11,8 +11,10 @@
 		</dict>
 		<key>MapUI.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>28</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,6 +35,11 @@
 			<true/>
 		</dict>
 		<key>4B02A1F82D6B59AD004895A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFC69B782D6BF3A80055235F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

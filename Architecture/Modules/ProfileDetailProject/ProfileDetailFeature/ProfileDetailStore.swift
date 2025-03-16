@@ -10,12 +10,22 @@ import SwiftUI
 import Core
 import StoreFramework
 
+import ProfileEditInterface
+
 final class ProfileDetailStore: StoreInterface {
-    struct State: Equatable {
+    static func == (lhs: ProfileDetailStore, rhs: ProfileDetailStore) -> Bool {
+        lhs.state == rhs.state
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(state)
+    }
+    
+    struct State: Hashable {
         var profile: ProfileModel = .empty
     }
     
-    enum Action: Equatable {
+    enum Action: Hashable {
         case updateProfile(ProfileModel)
     }
     
@@ -30,6 +40,17 @@ final class ProfileDetailStore: StoreInterface {
         case .updateProfile(let model):
             state.profile = model
         }
+    }
+    
+    deinit {
+        print("ProfileDetailStore \(#function)")
+    }
+}
+
+extension ProfileDetailStore: ProfileEditOutputInterface {
+    func deliverModel(model: ProfileModel) {
+        print("\(#function) model: \(model)")
+        self.action(.updateProfile(model))
     }
 }
 

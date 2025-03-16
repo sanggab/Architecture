@@ -32,7 +32,7 @@ public struct ProfileDetailView: View {
         
         
         Button {
-            coordinator.openProfileEdit()
+            coordinator.openProfileEdit(interface: self.store)
         } label: {
             Text("ProfileEdit으로 이동해라")
         }

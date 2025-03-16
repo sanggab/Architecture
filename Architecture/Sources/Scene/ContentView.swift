@@ -18,7 +18,7 @@ struct ContentView: View {
                     Rectangle()
                         .fill(.mint)
                         .overlay {
-                            Text("첫 번째 뷰 푸시")
+                            Text("Map 푸시")
                         }
                         .onTapGesture {
                             coordinator.push(page: .map)
@@ -27,7 +27,7 @@ struct ContentView: View {
                     Rectangle()
                         .fill(.blue)
                         .overlay {
-                            Text("두 번째 뷰 푸시")
+                            Text("Likeyou 푸시")
                         }
                         .onTapGesture {
                             coordinator.push(page: .likesyou)
@@ -36,10 +36,10 @@ struct ContentView: View {
                     Rectangle()
                         .fill(.pink)
                         .overlay {
-                            Text("세 번째 뷰 푸시")
+                            Text("ProfileDetail 푸시")
                         }
                         .onTapGesture {
-                            coordinator.push(page: .test)
+                            coordinator.push(page: .profileDetail)
                         }
                     
                     Rectangle()

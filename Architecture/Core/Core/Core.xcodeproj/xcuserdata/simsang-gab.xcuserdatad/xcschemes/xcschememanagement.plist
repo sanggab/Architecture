@@ -4,20 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Domain.xcscheme_^#shared#^_</key>
+		<key>Core.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>22</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>EF40F9102D6C29FB000C1DA1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<integer>7</integer>
 		</dict>
 	</dict>
 </dict>

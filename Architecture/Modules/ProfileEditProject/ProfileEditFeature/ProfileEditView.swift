@@ -8,8 +8,16 @@
 import SwiftUI
 import Kingfisher
 
+import ProfileEditInterface
+
 public struct ProfileEditView: View {
     @StateObject private var store: ProfileEditStore = .init()
+    
+    let interface: any ProfileEditOutputInterface
+    
+    public init(interface: any ProfileEditOutputInterface) {
+        self.interface = interface
+    }
     
     public var body: some View {
         KFImage(URL(string: store(\.profile.imgUrl)))
@@ -62,12 +70,14 @@ public struct ProfileEditView: View {
 
         Button {
             let model = store(\.profile)
+            
+            self.interface.deliverModel(model: model)
         } label: {
             Text("ProfileDetail에 바뀐 프로필 전달해라")
         }
     }
 }
 
-#Preview {
-    ProfileEditView()
-}
+//#Preview {
+//    ProfileEditView()
+//}

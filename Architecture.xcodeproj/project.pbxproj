@@ -21,6 +21,14 @@
 		4B045B752D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B722D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift */; };
 		4B045CBB2D6A2CF1007A2C4C /* CoordinatorExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045CB92D6A2CF1007A2C4C /* CoordinatorExport.swift */; };
 		4BDCADC12D86C2A600F866ED /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4BDCADC02D86C2A600F866ED /* .gitignore */; };
+		4BDCAE202D86C33D00F866ED /* MVIFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCADF62D86C2A700F866ED /* MVIFeature.framework */; };
+		4BDCAE212D86C33D00F866ED /* MVIFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCADF62D86C2A700F866ED /* MVIFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BDCAE222D86C34C00F866ED /* MVILowerFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCADED2D86C2A700F866ED /* MVILowerFeature.framework */; };
+		4BDCAE232D86C34C00F866ED /* MVILowerFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCADED2D86C2A700F866ED /* MVILowerFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BDCAE242D86D5BF00F866ED /* ProfileDetailFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE092D86C2A700F866ED /* ProfileDetailFeature.framework */; };
+		4BDCAE252D86D5BF00F866ED /* ProfileDetailFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE092D86C2A700F866ED /* ProfileDetailFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BDCAE272D86D5C400F866ED /* ProfileEditFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */; };
+		4BDCAE282D86D5C400F866ED /* ProfileEditFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; };
 		EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBDFB22D7FF7C400277B84 /* MapFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF572D7FEEFB00277B84 /* MapFeature.framework */; };
@@ -34,6 +42,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4BDCADEC2D86C2A700F866ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE08C2D82A79300277B84 /* MVILowerProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EFDBE0AE2D82AA9C00277B84;
+			remoteInfo = MVILowerFeature;
+		};
+		4BDCADF52D86C2A700F866ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EFDBE1122D83A3FB00277B84;
+			remoteInfo = MVIFeature;
+		};
+		4BDCAE082D86C2A700F866ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE2902D83FD7700277B84 /* ProfileDetailProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EFDBE2AD2D83FDA800277B84;
+			remoteInfo = ProfileDetailFeature;
+		};
 		EF40F9202D6C29FC000C1DA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EF40F91C2D6C29FC000C1DA1 /* Domain.xcodeproj */;
@@ -85,9 +114,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4BDCAE212D86C33D00F866ED /* MVIFeature.framework in Embed Frameworks */,
 				EFDBDFBA2D7FF96100277B84 /* TestViewFeature.framework in Embed Frameworks */,
+				4BDCAE252D86D5BF00F866ED /* ProfileDetailFeature.framework in Embed Frameworks */,
 				EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */,
+				4BDCAE282D86D5C400F866ED /* ProfileEditFeature.framework in Embed Frameworks */,
 				4B02A28B2D6B633E004895A8 /* LikesyouFeature.framework in Embed Frameworks */,
+				4BDCAE232D86C34C00F866ED /* MVILowerFeature.framework in Embed Frameworks */,
 				EFDBDFBC2D7FF97100277B84 /* MyPageFeature.framework in Embed Frameworks */,
 				EFDBDFB32D7FF7C400277B84 /* MapFeature.framework in Embed Frameworks */,
 			);
@@ -113,6 +146,7 @@
 		4B045B722D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4B045CB92D6A2CF1007A2C4C /* CoordinatorExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorExport.swift; sourceTree = "<group>"; };
 		4BDCADC02D86C2A600F866ED /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileEditFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF40F91C2D6C29FC000C1DA1 /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 		EFBD1F7A2D641083003426F4 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,9 +169,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDCAE202D86C33D00F866ED /* MVIFeature.framework in Frameworks */,
 				EFDBDFB92D7FF96100277B84 /* TestViewFeature.framework in Frameworks */,
+				4BDCAE242D86D5BF00F866ED /* ProfileDetailFeature.framework in Frameworks */,
 				EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */,
+				4BDCAE272D86D5C400F866ED /* ProfileEditFeature.framework in Frameworks */,
 				4B02A28A2D6B633E004895A8 /* LikesyouFeature.framework in Frameworks */,
+				4BDCAE222D86C34C00F866ED /* MVILowerFeature.framework in Frameworks */,
 				EFDBDFBB2D7FF97100277B84 /* MyPageFeature.framework in Frameworks */,
 				EFDBDFB22D7FF7C400277B84 /* MapFeature.framework in Frameworks */,
 			);
@@ -164,8 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				EFDBE2902D83FD7700277B84 /* ProfileDetailProject.xcodeproj */,
-				EFDBE1FF2D83F43F00277B84 /* StoreFramework.xcodeproj */,
 				EFDBE17F2D83F38400277B84 /* ProfileEditProject.xcodeproj */,
+				EFDBE1FF2D83F43F00277B84 /* StoreFramework.xcodeproj */,
 				EFDBE08C2D82A79300277B84 /* MVILowerProject.xcodeproj */,
 				EFDBE0502D82567B00277B84 /* MVIProject.xcodeproj */,
 				EFDBE02D2D814CC300277B84 /* MVVMProject.xcodeproj */,
@@ -342,6 +380,7 @@
 		EFC257402D670D7A005A18CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */,
 				4B02A2892D6B633E004895A8 /* LikesyouFeature.framework */,
 			);
 			name = Frameworks;
@@ -380,6 +419,7 @@
 		EFDBE0512D82567B00277B84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				4BDCADF62D86C2A700F866ED /* MVIFeature.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,6 +427,7 @@
 		EFDBE08D2D82A79300277B84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				4BDCADED2D86C2A700F866ED /* MVILowerFeature.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -398,13 +439,6 @@
 				EFDBE1432D83E38A00277B84 /* Test.swift */,
 			);
 			path = DI;
-			sourceTree = "<group>";
-		};
-		EFDBE1802D83F38400277B84 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		EFDBE2002D83F43F00277B84 /* Products */ = {
@@ -432,6 +466,7 @@
 		EFDBE2912D83FD7700277B84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				4BDCAE092D86C2A700F866ED /* ProfileDetailFeature.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -578,10 +613,6 @@
 					ProjectRef = EFDBE2902D83FD7700277B84 /* ProfileDetailProject.xcodeproj */;
 				},
 				{
-					ProductGroup = EFDBE1802D83F38400277B84 /* Products */;
-					ProjectRef = EFDBE17F2D83F38400277B84 /* ProfileEditProject.xcodeproj */;
-				},
-				{
 					ProductGroup = EFDBE2002D83F43F00277B84 /* Products */;
 					ProjectRef = EFDBE1FF2D83F43F00277B84 /* StoreFramework.xcodeproj */;
 				},
@@ -600,6 +631,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		4BDCADED2D86C2A700F866ED /* MVILowerFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MVILowerFeature.framework;
+			remoteRef = 4BDCADEC2D86C2A700F866ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4BDCADF62D86C2A700F866ED /* MVIFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MVIFeature.framework;
+			remoteRef = 4BDCADF52D86C2A700F866ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4BDCAE092D86C2A700F866ED /* ProfileDetailFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProfileDetailFeature.framework;
+			remoteRef = 4BDCAE082D86C2A700F866ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		EF40F9212D6C29FC000C1DA1 /* Domain.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;

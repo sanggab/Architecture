@@ -12,11 +12,11 @@ import StoreFramework
 import ProfileDetailInterface
 
 final class ProfileEditStore: StoreInterface {
-    struct State: Equatable {
+    struct State: Hashable {
         var profile: ProfileModel = .empty
     }
     
-    enum Action: Equatable {
+    enum Action: Hashable {
 //        case updateProfile(ProfileModel)
         case updateImage(String)
         case updateAge(Int)
@@ -41,6 +41,11 @@ final class ProfileEditStore: StoreInterface {
             self.update(\.profile.name, newValue: name)
         }
     }
+    
+    deinit {
+        print("ProfileEditStore \(#function)")
+    }
+
 }
 
 extension ProfileEditStore {

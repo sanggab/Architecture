@@ -11,13 +11,17 @@
 		</dict>
 		<key>LikesyouInterface.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>17</integer>
 		</dict>
 		<key>LikesyouUI.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>15</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -38,6 +42,16 @@
 			<true/>
 		</dict>
 		<key>4B02A2782D6B62B7004895A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFC69B8D2D6BF3C50055235F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFC69B9E2D6BF3D50055235F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
