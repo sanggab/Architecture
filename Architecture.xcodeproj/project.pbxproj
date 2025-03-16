@@ -20,6 +20,7 @@
 		4B045B742D69DD40007A2C4C /* ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B712D69DD40007A2C4C /* ArchitectureUITests.swift */; };
 		4B045B752D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045B722D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift */; };
 		4B045CBB2D6A2CF1007A2C4C /* CoordinatorExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B045CB92D6A2CF1007A2C4C /* CoordinatorExport.swift */; };
+		4BDCADC12D86C2A600F866ED /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4BDCADC02D86C2A600F866ED /* .gitignore */; };
 		EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; };
 		EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBDFB22D7FF7C400277B84 /* MapFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF572D7FEEFB00277B84 /* MapFeature.framework */; };
@@ -111,6 +112,7 @@
 		4B045B712D69DD40007A2C4C /* ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUITests.swift; sourceTree = "<group>"; };
 		4B045B722D69DD40007A2C4C /* ArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4B045CB92D6A2CF1007A2C4C /* CoordinatorExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorExport.swift; sourceTree = "<group>"; };
+		4BDCADC02D86C2A600F866ED /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EF40F91C2D6C29FC000C1DA1 /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 		EFBD1F7A2D641083003426F4 /* Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD1F8A2D641086003426F4 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 			children = (
 				4B045B602D69DD39007A2C4C /* Preview Content */,
 				4B045B612D69DD39007A2C4C /* Assets.xcassets */,
+				4BDCADC02D86C2A600F866ED /* .gitignore */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B045B672D69DD39007A2C4C /* Preview Assets.xcassets in Resources */,
+				4BDCADC12D86C2A600F866ED /* .gitignore in Resources */,
 				4B045B682D69DD39007A2C4C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
