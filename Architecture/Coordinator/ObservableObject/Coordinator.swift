@@ -17,30 +17,6 @@ import ProfileDetailInterface
 import ProfileEditInterface
 
 enum Page: Hashable {
-//    static func == (lhs: Page, rhs: Page) -> Bool {
-//        switch (lhs, rhs) {
-//        case (.map, .map):
-//            return true
-//        case (.likesyou, .likesyou):
-//            return true
-//        case (.messageList, .messageList):
-//            return true
-//        case (.message, .message):
-//            return true
-//        case (.mypage, .mypage):
-//            return true
-//        case (.test, .test):
-//            return true
-//        case (.mviproject, .mviproject):
-//            return true
-//        case (.mvilowerproject(_, let test1), .mvilowerproject(_, let test2)):
-//            
-//            return test1 == test2
-//        default:
-//            return true
-//        }
-//    }
-//    
     case map
     case likesyou
     case messageList

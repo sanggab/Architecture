@@ -27,8 +27,8 @@
 		4BDCAE232D86C34C00F866ED /* MVILowerFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCADED2D86C2A700F866ED /* MVILowerFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BDCAE242D86D5BF00F866ED /* ProfileDetailFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE092D86C2A700F866ED /* ProfileDetailFeature.framework */; };
 		4BDCAE252D86D5BF00F866ED /* ProfileDetailFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE092D86C2A700F866ED /* ProfileDetailFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BDCAE272D86D5C400F866ED /* ProfileEditFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */; };
-		4BDCAE282D86D5C400F866ED /* ProfileEditFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF00AFEF2D879E34004745AA /* ProfileEditFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */; };
+		EF00AFF02D879E34004745AA /* ProfileEditFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE262D86D5C400F866ED /* ProfileEditFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; };
 		EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF40F9212D6C29FC000C1DA1 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBDFB22D7FF7C400277B84 /* MapFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBDF572D7FEEFB00277B84 /* MapFeature.framework */; };
@@ -118,7 +118,7 @@
 				EFDBDFBA2D7FF96100277B84 /* TestViewFeature.framework in Embed Frameworks */,
 				4BDCAE252D86D5BF00F866ED /* ProfileDetailFeature.framework in Embed Frameworks */,
 				EF40F9502D6C2A77000C1DA1 /* Domain.framework in Embed Frameworks */,
-				4BDCAE282D86D5C400F866ED /* ProfileEditFeature.framework in Embed Frameworks */,
+				EF00AFF02D879E34004745AA /* ProfileEditFeature.framework in Embed Frameworks */,
 				4B02A28B2D6B633E004895A8 /* LikesyouFeature.framework in Embed Frameworks */,
 				4BDCAE232D86C34C00F866ED /* MVILowerFeature.framework in Embed Frameworks */,
 				EFDBDFBC2D7FF97100277B84 /* MyPageFeature.framework in Embed Frameworks */,
@@ -173,7 +173,7 @@
 				EFDBDFB92D7FF96100277B84 /* TestViewFeature.framework in Frameworks */,
 				4BDCAE242D86D5BF00F866ED /* ProfileDetailFeature.framework in Frameworks */,
 				EF40F94F2D6C2A77000C1DA1 /* Domain.framework in Frameworks */,
-				4BDCAE272D86D5C400F866ED /* ProfileEditFeature.framework in Frameworks */,
+				EF00AFEF2D879E34004745AA /* ProfileEditFeature.framework in Frameworks */,
 				4B02A28A2D6B633E004895A8 /* LikesyouFeature.framework in Frameworks */,
 				4BDCAE222D86C34C00F866ED /* MVILowerFeature.framework in Frameworks */,
 				EFDBDFBB2D7FF97100277B84 /* MyPageFeature.framework in Frameworks */,
@@ -329,6 +329,13 @@
 			isa = PBXGroup;
 			children = (
 				EF40F9212D6C29FC000C1DA1 /* Domain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7DC62F2D8796FC00E13A66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -611,6 +618,10 @@
 				{
 					ProductGroup = EFDBE2912D83FD7700277B84 /* Products */;
 					ProjectRef = EFDBE2902D83FD7700277B84 /* ProfileDetailProject.xcodeproj */;
+				},
+				{
+					ProductGroup = EF7DC62F2D8796FC00E13A66 /* Products */;
+					ProjectRef = EFDBE17F2D83F38400277B84 /* ProfileEditProject.xcodeproj */;
 				},
 				{
 					ProductGroup = EFDBE2002D83F43F00277B84 /* Products */;

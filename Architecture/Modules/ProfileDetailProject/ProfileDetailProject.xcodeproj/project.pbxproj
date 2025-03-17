@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BDCAE2A2D86E9F300F866ED /* ProfileEditInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */; };
-		4BDCAE2B2D86E9F300F866ED /* ProfileEditInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF48460F2D879F690096F243 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EF48460E2D879F690096F243 /* Kingfisher */; };
+		EF4846102D87A0330096F243 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2BA2D83FDC000277B84 /* Core.framework */; };
+		EF4846112D87A0330096F243 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2BA2D83FDC000277B84 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF4846132D87A04B0096F243 /* ProfileEditInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */; };
+		EF4846142D87A04B0096F243 /* ProfileEditInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF4846152D87A0560096F243 /* ProfileDetailInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; };
+		EF4846162D87A0560096F243 /* ProfileDetailInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF4846192D87A09C0096F243 /* StoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */; };
+		EF48461A2D87A09C0096F243 /* StoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF48461C2D87A0B80096F243 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EF48461B2D87A0B80096F243 /* Kingfisher */; };
 		EFDBE2A12D83FD9B00277B84 /* ProfileDetailInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; };
 		EFDBE2A32D83FD9B00277B84 /* ProfileDetailInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBE2B32D83FDA900277B84 /* ProfileDetailFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2AD2D83FDA800277B84 /* ProfileDetailFeature.framework */; };
 		EFDBE2B42D83FDA900277B84 /* ProfileDetailFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2AD2D83FDA800277B84 /* ProfileDetailFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFDBE2BB2D83FDC000277B84 /* ProfileDetailInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; };
-		EFDBE2BC2D83FDC000277B84 /* ProfileDetailInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFDBE2BF2D83FDC000277B84 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2BA2D83FDC000277B84 /* Core.framework */; };
-		EFDBE2C02D83FDC000277B84 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2BA2D83FDC000277B84 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFDBE2C32D83FDC500277B84 /* StoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */; };
-		EFDBE2C42D83FDC500277B84 /* StoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFDBE2C72D83FDD400277B84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EFDBE2C62D83FDD400277B84 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EF4846172D87A0560096F243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE2772D83FD7400277B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDBE29A2D83FD9B00277B84;
+			remoteInfo = ProfileDetailInterface;
+		};
 		EFDBE29F2D83FD9B00277B84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFDBE2772D83FD7400277B84 /* Project object */;
@@ -37,16 +45,23 @@
 			remoteGlobalIDString = EFDBE2AC2D83FDA800277B84;
 			remoteInfo = ProfileDetailFeature;
 		};
-		EFDBE2BD2D83FDC000277B84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFDBE2772D83FD7400277B84 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFDBE29A2D83FD9B00277B84;
-			remoteInfo = ProfileDetailInterface;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EF4846122D87A0330096F243 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF4846162D87A0560096F243 /* ProfileDetailInterface.framework in Embed Frameworks */,
+				EF4846142D87A04B0096F243 /* ProfileEditInterface.framework in Embed Frameworks */,
+				EF4846112D87A0330096F243 /* Core.framework in Embed Frameworks */,
+				EF48461A2D87A09C0096F243 /* StoreFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFDBE2A22D83FD9B00277B84 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,24 +74,11 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFDBE2C12D83FDC000277B84 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EFDBE2BC2D83FDC000277B84 /* ProfileDetailInterface.framework in Embed Frameworks */,
-				EFDBE2C02D83FDC000277B84 /* Core.framework in Embed Frameworks */,
-				4BDCAE2B2D86E9F300F866ED /* ProfileEditInterface.framework in Embed Frameworks */,
-				EFDBE2C42D83FDC500277B84 /* StoreFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileEditInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7DC6892D879D2000E13A66 /* ProfileEditInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileEditInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE27F2D83FD7400277B84 /* ProfileDetailProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileDetailProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileDetailInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE2AD2D83FDA800277B84 /* ProfileDetailFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileDetailFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF48460F2D879F690096F243 /* Kingfisher in Frameworks */,
 				EFDBE2B32D83FDA900277B84 /* ProfileDetailFeature.framework in Frameworks */,
 				EFDBE2A12D83FD9B00277B84 /* ProfileDetailInterface.framework in Frameworks */,
 			);
@@ -123,11 +126,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFDBE2C72D83FDD400277B84 /* Kingfisher in Frameworks */,
-				EFDBE2BB2D83FDC000277B84 /* ProfileDetailInterface.framework in Frameworks */,
-				EFDBE2BF2D83FDC000277B84 /* Core.framework in Frameworks */,
-				4BDCAE2A2D86E9F300F866ED /* ProfileEditInterface.framework in Frameworks */,
-				EFDBE2C32D83FDC500277B84 /* StoreFramework.framework in Frameworks */,
+				EF4846152D87A0560096F243 /* ProfileDetailInterface.framework in Frameworks */,
+				EF4846132D87A04B0096F243 /* ProfileEditInterface.framework in Frameworks */,
+				EF4846102D87A0330096F243 /* Core.framework in Frameworks */,
+				EF4846192D87A09C0096F243 /* StoreFramework.framework in Frameworks */,
+				EF48461C2D87A0B80096F243 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +161,7 @@
 		EFDBE2B92D83FDC000277B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF7DC6892D879D2000E13A66 /* ProfileEditInterface.framework */,
 				4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */,
 				EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */,
 				EFDBE2BA2D83FDC000277B84 /* Core.framework */,
@@ -205,6 +209,7 @@
 			);
 			name = ProfileDetailProject;
 			packageProductDependencies = (
+				EF48460E2D879F690096F243 /* Kingfisher */,
 			);
 			productName = ProfileDetailProject;
 			productReference = EFDBE27F2D83FD7400277B84 /* ProfileDetailProject.app */;
@@ -241,19 +246,19 @@
 				EFDBE2A92D83FDA800277B84 /* Sources */,
 				EFDBE2AA2D83FDA800277B84 /* Frameworks */,
 				EFDBE2AB2D83FDA800277B84 /* Resources */,
-				EFDBE2C12D83FDC000277B84 /* Embed Frameworks */,
+				EF4846122D87A0330096F243 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EFDBE2BE2D83FDC000277B84 /* PBXTargetDependency */,
+				EF4846182D87A0560096F243 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				EFDBE2AE2D83FDA900277B84 /* ProfileDetailFeature */,
 			);
 			name = ProfileDetailFeature;
 			packageProductDependencies = (
-				EFDBE2C62D83FDD400277B84 /* Kingfisher */,
+				EF48461B2D87A0B80096F243 /* Kingfisher */,
 			);
 			productName = ProfileDetailFeature;
 			productReference = EFDBE2AD2D83FDA800277B84 /* ProfileDetailFeature.framework */;
@@ -292,7 +297,7 @@
 			mainGroup = EFDBE2762D83FD7400277B84;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EFDBE2C52D83FDD400277B84 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				EF48460D2D879F690096F243 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EFDBE2802D83FD7400277B84 /* Products */;
@@ -355,6 +360,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EF4846182D87A0560096F243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDBE29A2D83FD9B00277B84 /* ProfileDetailInterface */;
+			targetProxy = EF4846172D87A0560096F243 /* PBXContainerItemProxy */;
+		};
 		EFDBE2A02D83FD9B00277B84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFDBE29A2D83FD9B00277B84 /* ProfileDetailInterface */;
@@ -364,11 +374,6 @@
 			isa = PBXTargetDependency;
 			target = EFDBE2AC2D83FDA800277B84 /* ProfileDetailFeature */;
 			targetProxy = EFDBE2B12D83FDA900277B84 /* PBXContainerItemProxy */;
-		};
-		EFDBE2BE2D83FDC000277B84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFDBE29A2D83FD9B00277B84 /* ProfileDetailInterface */;
-			targetProxy = EFDBE2BD2D83FDC000277B84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -738,20 +743,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EFDBE2C52D83FDD400277B84 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		EF48460D2D879F690096F243 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.3.0;
+				minimumVersion = 8.3.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EFDBE2C62D83FDD400277B84 /* Kingfisher */ = {
+		EF48460E2D879F690096F243 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EFDBE2C52D83FDD400277B84 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = EF48460D2D879F690096F243 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		EF48461B2D87A0B80096F243 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF48460D2D879F690096F243 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

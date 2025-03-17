@@ -9,7 +9,6 @@ import SwiftUI
 
 import Core
 import StoreFramework
-import ProfileDetailInterface
 
 final class ProfileEditStore: StoreInterface {
     struct State: Hashable {
