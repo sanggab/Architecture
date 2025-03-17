@@ -31,7 +31,7 @@ final class ProfileDetailStore: StoreInterface {
     
     @Published private var state: State = .init()
     
-    func callAsFunction<V>(_ keyPath: KeyPath<State, V>) -> V where V : Equatable {
+    func callAsFunction<V>(_ keyPath: KeyPath<State, V>) -> V where V : Hashable {
         return state[keyPath: keyPath]
     }
     
@@ -55,7 +55,7 @@ extension ProfileDetailStore: ProfileEditOutputInterface {
 }
 
 extension ProfileDetailStore {
-    func update<V>(_ keyPath: WritableKeyPath<State, V>, newValue: V) where V : Equatable {
+    func update<V>(_ keyPath: WritableKeyPath<State, V>, newValue: V) where V : Hashable {
         self.state[keyPath: keyPath] = newValue
     }
 }

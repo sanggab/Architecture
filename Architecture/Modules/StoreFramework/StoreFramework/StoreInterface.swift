@@ -12,7 +12,7 @@ public protocol StoreInterface: ObservableObject {
     associatedtype State: Hashable
     associatedtype Action: Hashable
     
-    func callAsFunction<V: Equatable>(_ keyPath: KeyPath<State, V>) -> V
+    func callAsFunction<V: Hashable>(_ keyPath: KeyPath<State, V>) -> V
     
     func action(_ action: Action)
 }

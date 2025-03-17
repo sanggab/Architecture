@@ -16,7 +16,6 @@ final class ProfileEditStore: StoreInterface {
     }
     
     enum Action: Hashable {
-//        case updateProfile(ProfileModel)
         case updateImage(String)
         case updateAge(Int)
         case updateName(String)
@@ -24,14 +23,12 @@ final class ProfileEditStore: StoreInterface {
     
     @Published private var state: State = .init()
     
-    func callAsFunction<V>(_ keyPath: KeyPath<State, V>) -> V where V : Equatable {
+    func callAsFunction<V>(_ keyPath: KeyPath<State, V>) -> V where V : Hashable {
         return state[keyPath: keyPath]
     }
     
     func action(_ action: Action) {
         switch action {
-//        case .updateProfile(let model):
-//            state.profile = model
         case .updateImage(let url):
             self.update(\.profile.imgUrl, newValue: url)
         case .updateAge(let age):
@@ -48,7 +45,7 @@ final class ProfileEditStore: StoreInterface {
 }
 
 extension ProfileEditStore {
-    func update<V>(_ keyPath: WritableKeyPath<State, V>, newValue: V) where V : Equatable {
+    func update<V>(_ keyPath: WritableKeyPath<State, V>, newValue: V) where V : Hashable {
         self.state[keyPath: keyPath] = newValue
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4846222D87B8BD0096F243 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4846212D87B8BD0096F243 /* Core.framework */; };
+		EF4846232D87B8BD0096F243 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF4846212D87B8BD0096F243 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBE1902D83F39A00277B84 /* ProfileEditFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE18A2D83F39A00277B84 /* ProfileEditFeature.framework */; };
 		EFDBE1912D83F39A00277B84 /* ProfileEditFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE18A2D83F39A00277B84 /* ProfileEditFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBE1D62D83F3E100277B84 /* ProfileEditInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE1D02D83F3E100277B84 /* ProfileEditInterface.framework */; };
@@ -45,6 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EF4846242D87B8BE0096F243 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF4846232D87B8BD0096F243 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFDBE1962D83F39A00277B84 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF4846212D87B8BD0096F243 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE16E2D83F38200277B84 /* ProfileEditProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileEditProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE18A2D83F39A00277B84 /* ProfileEditFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileEditFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE1D02D83F3E100277B84 /* ProfileEditInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileEditInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4846222D87B8BD0096F243 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +170,7 @@
 		EFDBE1DC2D83F3E700277B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF4846212D87B8BD0096F243 /* Core.framework */,
 				EFDBE25C2D83F5C500277B84 /* Core.framework */,
 				EFDBE2592D83F5AF00277B84 /* Core.framework */,
 				EFDBE2562D83F5A400277B84 /* Core.framework */,
@@ -242,6 +258,7 @@
 				EFDBE1CC2D83F3E100277B84 /* Sources */,
 				EFDBE1CD2D83F3E100277B84 /* Frameworks */,
 				EFDBE1CE2D83F3E100277B84 /* Resources */,
+				EF4846242D87B8BE0096F243 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

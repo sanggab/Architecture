@@ -17,6 +17,8 @@
 		EF4846192D87A09C0096F243 /* StoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */; };
 		EF48461A2D87A09C0096F243 /* StoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF48461C2D87A0B80096F243 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EF48461B2D87A0B80096F243 /* Kingfisher */; };
+		EF48461E2D87B8B50096F243 /* ProfileEditInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48461D2D87B8B50096F243 /* ProfileEditInterface.framework */; };
+		EF48461F2D87B8B50096F243 /* ProfileEditInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF48461D2D87B8B50096F243 /* ProfileEditInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBE2A12D83FD9B00277B84 /* ProfileDetailInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; };
 		EFDBE2A32D83FD9B00277B84 /* ProfileDetailInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFDBE2B32D83FDA900277B84 /* ProfileDetailFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDBE2AD2D83FDA800277B84 /* ProfileDetailFeature.framework */; };
@@ -62,6 +64,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4846202D87B8B50096F243 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF48461F2D87B8B50096F243 /* ProfileEditInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFDBE2A22D83FD9B00277B84 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +91,7 @@
 
 /* Begin PBXFileReference section */
 		4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileEditInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48461D2D87B8B50096F243 /* ProfileEditInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileEditInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7DC6892D879D2000E13A66 /* ProfileEditInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileEditInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE27F2D83FD7400277B84 /* ProfileDetailProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileDetailProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE29B2D83FD9B00277B84 /* ProfileDetailInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileDetailInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF48461E2D87B8B50096F243 /* ProfileEditInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +176,7 @@
 		EFDBE2B92D83FDC000277B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF48461D2D87B8B50096F243 /* ProfileEditInterface.framework */,
 				EF7DC6892D879D2000E13A66 /* ProfileEditInterface.framework */,
 				4BDCAE292D86E9F300F866ED /* ProfileEditInterface.framework */,
 				EFDBE2C22D83FDC500277B84 /* StoreFramework.framework */,
@@ -223,6 +239,7 @@
 				EFDBE2972D83FD9B00277B84 /* Sources */,
 				EFDBE2982D83FD9B00277B84 /* Frameworks */,
 				EFDBE2992D83FD9B00277B84 /* Resources */,
+				EF4846202D87B8B50096F243 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
